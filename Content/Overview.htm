@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="topic" style="mc-master-page: url('Resources\MasterPages\Topic.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Overview</h1>
+        <h2>History
+</h2>
+        <p>The Discovery Data Service (DDS) has been developed as part of the <a href="Discovery East London.htm" title="Discovery East London" alt="Discovery East London">Discovery program in North East London</a>.
+
+The Discovery program started with a collaboration of practices in four Clinical Commissioning Groups (CCGs), four NHS trusts, and the sustainability and transformation partnership (STP) covering a population of 1.2 million, and is extending to several other areas.
+
+Technical development is funded by the <a href="http://www.endeavourhealth.org/" target="_blank" title="www.endeavourhealth.org" alt="www.endeavourhealth.org">Endeavour Charitable Trust</a>, from the charity’s endowment, and the software and service operates using open source technologies. The Discovery program is funded by the four CCGs in inner North East London.
+
+ 
+
+</p>
+        <h2>How it works
+</h2>
+        <p>The DDS uses a publish and subscribe model.
+
+Subscribers are health care organisations who express an interest in accessing a subset of data for a particular purpose.
+
+Publishers are health provider organisations who control their data and agree to publish their data once, in a way that can be accessed by many subscribers.
+
+Only systems can interact with the data service; users do not directly interact with the service and can only obtain data through the system(s) of their choice.</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/publish subscribe.png" style="mc-float: frame-center;max-width: 75%;" />
+        </p>
+        <p>Regionally based data sharing agreements match a number of publishers to one or more subscribers for particular pre-agreed purposes. Data cannot be provided without adherence to a set of rules derived from the data sharing agreement.
+
+			The data service receives data from a number of publisher systems; the data is either sent automatically or transmitted on request by the service. The data within the service remains under the direct control of the data controllers with each item of data stamped by the data controller.
+
+			The data is then converted to a common format that is directly compatible with FHIR and Snomed-CT.
+
+			Depending on the data sharing rules, prior to transmission, the service links the data at a patient level by NHS number.
+
+			A subset of the data, for example a cohort of patients, is then made available to subscriber systems. Data is provided either in an identifiable form for direct care, or is de-identified for secondary uses, depending on the agreement.
+
+		Person level consent is managed according to GDPR and Caldicott policies.</p>
+        <h2>The DDS pipeline			</h2>
+        <p>The Discovery Data Service can be thought of as a pipeline; an organisation records an event, and that data is then transmitted from the organisation’s system (publisher) to a single end-point (the DDS) where it is audited and stored.
+
+			Data is only allowed into the DDS if it conforms with the entry criteria described in a data processing agreement. The agreement makes sure that the data is from an agreed source and is the correct type. Data that does not conform to the entry criteria is rejected.
+
+		Data is only allowed to leave the DDS if it conforms with the exit criteria described in a data sharing agreement. The agreement makes sure that the data is only sent to an agreed destination and that it is correct both in terms of data type and content, for an agreed population of patients or clients only, and that the relevant consent is applied.</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/DDS Pipes_NEW (1).png" style="mc-float: frame-center;max-width: 75%;max-height: 75%;" />
+        </p>
+        <h2>Data Sharing</h2>
+        <p>The data sharing agreements are local or regional based agreements whereby a group of publisher organisations are prepared to share a cohort of patients and a data set with a set of subscriber organisations who have expressed a need for the data.</p>
+        <p>An agreement has a name, a description, a purpose, any constraints, a cohort definition , a data set and a consent model.</p>
+        <p>For more information, see <a href="Data Sharing Manager.htm">Data Sharing Manager</a>.</p>
+        <h2>Authentication</h2><p>The Discovery authentication server supports federated 2-factor authentication and authorisation via the use of the open standards <a href="https://oauth.net/2/" title="https://oauth.net/2/" alt="https://oauth.net/2/" target="_blank">OAuth 2.0</a>  and <a href="http://openid.net/connect/" title="http://openid.net/connect/" alt="http://openid.net/connect/" target="_blank">Open ID Connect</a>.</p><p>A user’s identity is confirmed by using a provided username, a password, and a dynamically generated passcode via a device such as a smartphone.</p><h2>Security</h2><p>The Discovery Data Service is hosted in a secure cloud environment, which is approved by NHS Digital. High levels of security, availability, and scalability, combined with an HSCN approved connection, provides an exceptional service.</p><p>&#160;</p></body>
+</html>

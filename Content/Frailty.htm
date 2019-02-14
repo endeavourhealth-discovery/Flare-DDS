@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('Resources\MasterPages\Technical.flmsp');">
+    <head><title>Frailty checker</title>
+    </head>
+    <body>
+        <h1>Frailty</h1>
+        <p>The Discovery Data Service helps to identify potentially frail patients using a frailty algorithm. </p>
+        <p>The frailty algorithm results can be provided via the <a href="NHS 111 Discovery frailty flagging.htm">NHS111 Frailty API</a> or displayed in the Frailty Checker.</p>
+        <p>If the specified patient has an observation for severe or moderate frailty, the algorithm returns a value of true; observations for mild frailty return a value of false. If a patient is not found in the Discovery Data Service, the algorithm returns a value of not found.</p>
+        <p>The frailty algorithm results are then described, via the API or in the Frailty Checker, as follows:</p>
+        <ul>
+            <li class="bullets"><b>Potentially frail</b> - Patient has Moderate or Severe frailty codes
+            </li>
+            <li class="bullets"><b>Not frail</b> - Patient has Mild or No frailty codes
+            </li>
+            <li class="bullets"><b>Not found</b> - Patient not found
+            </li>
+        </ul>
+        <p>The frailty algorithm uses the following frailty codes:</p>
+        <table style="width: 100%;border-spacing: 0px 0px">
+            <col style="width: 25%" />
+            <col style="width: 25%" />
+            <col style="width: 25%" />
+            <col style="width: 25%;" />
+            <thead>
+                <tr>
+                    <th style="text-align: left;">Concept ID</th>
+                    <th style="text-align: left;">Original code</th>
+                    <th style="text-align: left;">Original term</th>
+                    <th style="text-align: left;">Frailty category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">713634000
+</td>
+                    <td style="text-align: left;">38Ql.
+</td>
+                    <td style="text-align: left;">FI - Frailty Index
+</td>
+                    <td style="text-align: left;">&gt; 0.36 (Severe)<br />&gt;0.24 and &lt;=0.36 (Moderate)<br />&gt;0.13 and &lt;=0.24 (Mild)
+</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">713636003
+					</td>
+                    <td style="text-align: left;"> </td>
+                    <td style="text-align: left;">Frailty Index score</td>
+                    <td style="text-align: left;">&gt; 0.36 (Severe)<br />&gt;0.24 and &lt;=0.36 (Moderate)<br />&gt;0.13 and &lt;=0.24 (Mild)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">445414007
+</td>
+                    <td style="text-align: left;">38DW.
+</td>
+                    <td style="text-align: left;">CSHA frailty scale
+</td>
+                    <td style="text-align: left;">&gt;=7 (Severe)<br />&gt;=6 and &lt;7 (Moderate)<br />&gt;=5 and &lt;6 (Mild)
+</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">925861000000102
+</td>
+                    <td style="text-align: left;">2Jd2.
+</td>
+                    <td style="text-align: left;">Severe frailty
+</td>
+                    <td style="text-align: left;">Severe
+</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">2010301000006105
+</td>
+                    <td style="text-align: left;">EMISNQQF7
+</td>
+                    <td style="text-align: left;">QFrailty category - severe frailty
+</td>
+                    <td style="text-align: left;">Severe</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">2010341000006107 </td>
+                    <td style="text-align: left;">&#160;</td>
+                    <td style="text-align: left;">QFrailty category - severe frailty (estimate)</td>
+                    <td style="text-align: left;">Severe</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">1839051000006106</td>
+                    <td style="text-align: left;">EMISNQON5
+</td>
+                    <td style="text-align: left;">On frailty register
+</td>
+                    <td style="text-align: left;">Moderate</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">
+925831000000107
+</td>
+                    <td style="text-align: left;">2Jd1.
+</td>
+                    <td style="text-align: left;">Moderate frailty
+</td>
+                    <td style="text-align: left;">Moderate</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">248279007
+</td>
+                    <td style="text-align: left;">2Jd..
+</td>
+                    <td style="text-align: left;">Frailty
+[RFC] </td>
+                    <td style="text-align: left;">Moderate</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">908431000006104
+</td>
+                    <td style="text-align: left;">HNG0500
+</td>
+                    <td style="text-align: left;">Frail elderly people
+[RFC] </td>
+                    <td style="text-align: left;">Moderate</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">910301000006104
+</td>
+                    <td style="text-align: left;">HNGNQRF75
+</td>
+                    <td style="text-align: left;">Frail person
+[RFC] </td>
+                    <td style="text-align: left;">Moderate</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">909011000006109
+</td>
+                    <td style="text-align: left;">HNG0632
+</td>
+                    <td style="text-align: left;">Frail elderly people
+</td>
+                    <td style="text-align: left;">Moderate</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">2010291000006109
+</td>
+                    <td style="text-align: left;">EMISNQQF6
+</td>
+                    <td style="text-align: left;">QFrailty category - moderate frailty
+</td>
+                    <td style="text-align: left;">Moderate</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">2010331000006102 </td>
+                    <td style="text-align: left;">&#160;</td>
+                    <td style="text-align: left;">QFrailty category -moderate frailty (estimate)</td>
+                    <td style="text-align: left;">Moderate </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">925791000000100</td>
+                    <td style="text-align: left;">2Jd0.&gt;</td>
+                    <td style="text-align: left;">Mild frailty
+					</td>
+                    <td style="text-align: left;">Mild</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">2010281000006106 </td>
+                    <td style="text-align: left;">&#160;</td>
+                    <td style="text-align: left;">QFrailty category - mild frailty</td>
+                    <td style="text-align: left;">Mild</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: left;">2010321000006100</td>
+                    <td style="text-align: left;">&#160;</td>
+                    <td style="text-align: left;">QFrailty category - mild frailty (estimate)</td>
+                    <td style="text-align: left;">Mild</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The frailty algorithm then calculates frailty categories using the following logic:
+</p>
+        <p style="font-weight: bold;">Severe frailty</p>
+        <p>Patients with observations where any of the following are true:</p>
+        <ul>
+            <li class="bullets">Concept ID is 925861000000102 (Severe frailty)</li>
+            <li class="bullets">Concept ID is 2010301000006105 (QFrailty category - severe frailty)</li>
+            <li class="bullets">Concept ID is 2010341000006107 (QFrailty category - severe frailty (estimate))</li>
+            <li class="bullets">Concept ID is 713634000 (FI - Frailty Index) or 713636003 (Frailty Index score) with a value &gt; 0.36</li>
+            <li class="bullets">Concept ID is 445414007 (CSHA frailty scale) with a value &gt;= 7</li>
+        </ul>
+        <p style="font-weight: bold;">Moderate frailty</p>
+        <p>Patients with observations where any of the following are true:</p>
+        <ul>
+            <li class="bullets">Concept ID is 925831000000107 (Moderate frailty)</li>
+            <li class="bullets">Concept ID is 1839051000006106 (On frailty register)</li>
+            <li class="bullets">Concept ID is 910301000006104 ([RFC] Frail person)</li>
+            <li class="bullets">Concept ID is 248279007 (Frailty)</li>
+            <li class="bullets">Concept ID is 908431000006104 ([RFC] Frail elderly people)</li>
+            <li class="bullets">Concept ID is 909011000006109 ([RFC] Frail elderly people)</li>
+            <li class="bullets">Concept ID is 2010291000006109 (QFrailty category - moderate frailty)</li>
+            <li class="bullets">Concept ID is 2010331000006102 (QFrailty category - moderate frailty (estimate))</li>
+            <li class="bullets">Concept ID is 713634000 (FI - Frailty Index) or 713636003 (Frailty Index score) with a value &gt; 0.24 and &lt;= 0.36</li>
+            <li class="bullets">Concept ID de is 445414007 (CSHA frailty scale) with a value &gt;= 6 and &lt; 7</li>
+        </ul>
+        <p style="font-weight: bold;">Mild frailty</p>
+        <p>Patients with observations where any of the following are true:</p>
+        <ul>
+            <li class="bullets">Concept ID is 925791000000100 (Mild frailty)</li>
+            <li class="bullets">Concept ID is 2010281000006106 (QFrailty category - mild frailty)</li>
+            <li class="bullets">Concept ID is 2010321000006100 (QFrailty category - mild frailty (estimate))</li>
+            <li class="bullets">Concept ID is 713634000 (FI - Frailty Index) or 713636003 (Frailty Index score) with a value &gt; 0.13 and  &lt;= 0.24</li>
+            <li class="bullets">Concept ID is 445414007 (CSHA frailty scale) with a value &gt;= 5 and &lt; 6</li>
+        </ul>
+        <p><a href="Population Health.htm" title="Back to Population Health" alt="Back to Population Health">Back to Population Health</a>
+        </p>
+    </body>
+</html>

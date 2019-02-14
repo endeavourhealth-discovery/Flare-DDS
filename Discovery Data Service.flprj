@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProject Version="1" xml:lang="en-gb" SourceControlBound="false" Comment="This template is similar to the other Top Navigation Basic template, but it is even simpler. The Home page is more basic, and there is only one stylesheet and one master page." MasterStylesheet="/Content/Resources/Stylesheets/styles.css" MasterStylesheetOverride="True">
+    <Synchronize>
+        <Mapping ProjectPath="Content/Resources/Images/DDS Pipes_NEW (1).png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/Websites/DDS website/pipe images/DDS Pipes_NEW (1).png" />
+        <Mapping ProjectPath="Content/Resources/Images/publish subscribe.png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/Websites/DDS website/Images/publish subscribe.png" />
+        <Mapping ProjectPath="Content/Resources/Images/data sharing map.png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/Websites/DDS website/Images/data sharing map.png" />
+        <Mapping ProjectPath="Content/Resources/Images/pin.png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/Websites/DDS website/Images/pin.png" />
+        <Mapping ProjectPath="Content/Resources/Images/m1.png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/Websites/DDS website/Images/m1.png" />
+        <Mapping ProjectPath="Content/Resources/Images/m2.png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/Websites/DDS website/Images/m2.png" />
+        <Mapping ProjectPath="Content/Resources/Images/software architecture.png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/Websites/DDS website/Images/software architecture.png" />
+        <Mapping ProjectPath="Content/Resources/Images/DDS components.png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/Websites/DDS website/Images/DDS components.png" />
+        <Mapping ProjectPath="Content/Resources/Images/Overview.png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/User Guides/Data Sharing Manager/Overview.png" />
+        <Mapping ProjectPath="Content/Resources/Images/User manager screen.png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/User Guides/User Manager/User manager screen.png" />
+        <Mapping ProjectPath="Content/Resources/Images/DDS governance overview.png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/Websites/DDS website/Images/DDS governance overview.png" />
+    </Synchronize>
+</CatapultProject>

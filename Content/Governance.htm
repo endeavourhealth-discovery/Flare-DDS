@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="topic" style="mc-master-page: url('Resources\MasterPages\Topic.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Governance</h1>
+        <h2>Information governance</h2>
+        <p>The Discovery Data Service (DDS) has two information governance models with a clear division between the two. This is also reflected in the <a href="Technical.htm#Architec" title="Technical architecture" alt="Technical architecture">architecture</a> of the service.</p>
+        <p>The first division handles data on behalf of  the publishing organisations. The second division handles data on behalf of receiving organisations. The terms <span style="color: #4678a1;">provider </span>and <span style="color: #4678a1;">consumer </span>can be used interchangeably with <span style="color: #4678a1;">publisher </span>and <span style="color: #4678a1;">subscriber </span>when considering this from the publisher/subscriber data flow perspective.</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/DDS governance overview.png" style="max-width: 65%;" />
+        </p>
+        <h3>Publishers</h3>
+        <p>The DDS acts as a data processor on behalf of the publishers of data. Examples of publishers include GP practices and acute trusts. </p>
+        <p>The publishers retain their position as data controllers in respect of their data in the DDS.  All data items in the service are stamped explicitly  with the source organisation (or service) and the associated data controller. For example, a GP practice is both the source organisation and the data controller, whereas a service in a hospital may have the NHS Trust as the data controller. </p>
+        <p>The data controller has a right of return and deletion of this data, with retention only of the audit of interactions between the service, the controller, and other parties.</p>
+        <p>The data, as received from the publishers, is converted to a standard format and stored. This does not affect the authority of the data controller on this data and remains stamped with the data controller.</p>
+        <p><span style="color: #4678a1; font-weight: bold;">Important:</span> Data cannot be accessed without a data sharing agreement.</p>
+        <h3>Data sharing agreements</h3>
+        <p>The DDS operates on the basis of local, regional, or supra-regional data sharing agreements where one agreement may be signed up to by many publishers and several subscribers.</p>
+        <p>A data sharing agreement (DSA) represents instructions from a publisher to provide a number of subscribers access to a cohort of patients and a set of data items, for the purposes of the agreement, subject to a consent model. The cohort of patients represents a subset of patients that have had care by the provider and the data set represents a subset of the publisher’s data.</p>
+        <p>Data sharing agreements are generally quite high level and provide general instructions on the purpose of sharing, and restrictions on data items and consent. They are not in themselves sufficient to enable access to data. Access to data is configured via projects that contain more detail including a further restricted set of data, and the means by which that data is accessed.</p>
+        <p>Each publisher will have several data sharing agreements and likewise each subscriber. However, these are not point to point. They are many to many via a single agreement.</p>
+        <h3>Patient consent</h3>
+        <p>Each data sharing agreement, and each project within a data sharing agreement, has a policy in respect of how patient consent is handled.</p>
+        <p>The approach varies depending on whether the data sharing agreement is for direct care, or for secondary use, and the settings reflect the governance arrangements that are in place. It is expected that many DSAs will share the same, or similar, consent policy. For example, a data sharing agreement that is for the purposes of direct care might respect a decision by a patient to dissent from sharing data via a local detailed care record. </p>
+        <p>Consent settings might also take account of codes that are entered into source system records in order to determine whether data can be shared or not. For example, making sure that a dissent code is the latest entry.</p>
+        <p>In some projects, consent is explicit and in others, consent is aligned with the national opt out.</p>
+        <h3>Project configuration</h3>
+        <p>Projects configure data flow between publishers and subscribers. They are part of an overarching data sharing agreement. For example, if a subscriber diabetic service needs to receive a diabetic data set for a cohort of diabetic patients,  received daily and incrementally, then a project is configured for this purpose.</p>
+        <p>A project is therefore always part of a data sharing agreement.</p>
+        <h3>Subscribers</h3>
+        <p>The DDS acts as a data processor for the subscriber. All data, having passed from publisher to subscriber as a result of a data sharing agreement and project configuration, is stamped with the subscriber who is now the data controller.</p>
+        <p>The DDS may host the subscribers data in their behalf. Alternatively, it may simply pass the data to the subscriber for the subscriber to use; this is covered by a data sharing agreement and relevant project configuration.</p>
+        <h3>Security and authentication</h3>
+        <p>All subscribers, whether they are computers operating on behalf of organisations, or users with access to data, are authenticated using standard protocols. In addition, each subscriber must have a role that determines the level of access they can have to the data in the DDS.</p>
+        <p><span style="color: #4678a1; font-weight: bold;">Note:</span> The DDS does not regulate the access to data once that data has been transferred to a subscriber.</p>
+        <h2>DDS governance</h2>
+        <p>The DDS is NHS owned under local control. In this model, control and ownership of the service is bottom up. For example, a publisher may have direct control over an instance of a Discovery Data Service but may delegate the ownership of the service to a clinical commissioning group.</p>
+        <p>More often,  a number of publishers and subscribers  agree their precise governance model. For example, in East London there is an agreement between several hundred practices, and a number of NHS Trusts, and the governance of that DDS is via a collaboration (<a href="Discovery East London.htm" title="Discovery East London" alt="Discovery East London">The East London Discovery program</a>).</p>
+        <p>Details of each governance arrangement can be seen in <a href="Projects.htm" title="User projects" alt="User projects">User projects</a>.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

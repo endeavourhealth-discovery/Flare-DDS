@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="topic" style="mc-master-page: url('Resources\MasterPages\Technical.flmsp');">
+    <head>
+        <script type="text/javascript" src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="Resources/Scripts/h-scroll.js">
+        </script>
+    </head>
+    <map id="map1">
+        <area shape="polygon" coords="31,39,89,39,116,89,93,139,30,140,1,84" title="Authentication and authorisation" alt="Authentication and authorisation" href="Popups/Authentication and authorisation.htm" target="_popup" MadCap:width="500px" MadCap:height="350px" />
+        <area shape="polygon" coords="125,91,183,91,210,141,187,191,124,192,95,136" title="Data distribution" alt="Data distribution" href="Popups/Data distributor.htm" target="_popup" MadCap:width="500px" MadCap:height="350px" />
+        <area shape="polygon" coords="31,145,89,145,116,195,93,245,30,246,1,190" title="Transforms" alt="Transforms" href="Popups/Transforms.htm" target="_popup" MadCap:width="500px" MadCap:height="350px" />
+        <area shape="polygon" coords="31,250,89,250,116,300,93,350,30,351,1,295" title="Query engine" alt="Query engine" href="Popups/Query engine.htm" target="_popup" MadCap:width="500px" MadCap:height="350px" />
+        <area shape="polygon" coords="219,41,277,41,304,91,281,141,218,142,189,86" title="Message gateway" alt="Message gateway" href="Popups/Message gateway.htm" target="_popup" MadCap:width="500px" MadCap:height="350px" />
+        <area shape="polygon" coords="123,193,181,193,208,243,185,293,122,294,93,238" title="Subscription store manager" alt="Subscription store manager" href="Popups/Subscription store manager.htm" target="_popup" MadCap:width="500px" MadCap:height="350px" />
+    </map>
+    <body>
+        <h1>Technical</h1>
+        <p>This section describes the technical details of the Discovery Data Service; the architecture that underpins the data service software, the components that make up the service, the testing and assurance processes, and the resources, technologies, and software that are used to host, develop, and support the service.</p>
+        <p>For details see:</p>
+        <ul>
+            <li class="bullets"><a href="#Architec">Architecture</a>
+            </li>
+            <li class="bullets"><a href="#Componen">Components</a>
+            </li>
+            <li class="bullets"><a href="#Manageme">Management tools</a>
+            </li>
+            <li class="bullets"><a href="#Query">Query and reporting tools</a>
+            </li>
+            <li class="bullets"><a href="#APIs">APIs</a>
+            </li>
+            <li class="bullets"><a href="#Data">Published data</a>
+            </li>
+            <li class="bullets"><a href="#Data2">Data assurance and testing</a>
+            </li>
+            <li class="bullets"><a href="#Technolo">Technologies</a>
+            </li>
+        </ul>
+        <h2><a name="Architec"></a>Architecture</h2>
+        <p>The following diagram explains the underlying architecture and the basic publication to subscription pathways that data must follow. </p>
+        <p>
+            <img src="Resources/Images/software architecture.png" style="mc-float: frame-center;max-width: 90%;min-width: auto;min-height: auto;width: auto;height: auto;" />
+        </p>
+        <p>Publisher data is identified by:</p>
+        <ul>
+            <li class="bullets">Organisation - it is assumed that published data will be accompanied by an ODS code , or similar.</li>
+            <li class="bullets">Software format and version - for example, EMIS CSV 5.6 or Adastra XLM 1.0.</li>
+        </ul>
+        <p><b>Important:</b> Existing data processing and sharing agreements are checked to validate that the DDS has permission to process data from that organisation and in that format/version, and then share that data with specified subscribers.</p>
+        <h2><a name="Componen"></a>Components</h2>
+        <p>The following diagram illustrates the various logical components that make up the Discovery Data Service:</p>
+        <img src="Resources/Images/DDS components.png" usemap="#map1" style="mc-float: frame-center;max-width: 100%;" />
+        <h2><a name="Manageme"></a>Management tools</h2>
+        <p>The Discovery Data Service hosts a number of web applications and web application APIs for managing the data service.</p>
+        <p>We have a skilled and experienced team developing tools and utilities to maximise the benefits of a single source of data.</p>
+        <p>The tools, which are in various stages of development and currently being prioritised in line with the use cases being presented to the East London Discovery Project, include:</p>
+        <ul>
+            <li class="bullets"><a href="Data Sharing Manager.htm">Data Sharing Manager</a>
+            </li>
+            <li class="bullets"><a href="Organisation Manager.htm">Organisation Manager</a>
+            </li>
+            <li class="bullets"><a href="User Manager.htm">User Manager</a>
+            </li>
+            <li class="bullets">Information Model Manager</li>
+        </ul>
+        <h2><a name="Query"></a>Query &amp; Reporting Tools</h2>
+        <p>The Discovery Data Service hosts a number of web applications and web application APIs for record viewing and analytics/reporting purposes.</p>
+        <p>We have a skilled and experienced team developing tools and utilities to maximise the benefits of a single source of data.</p>
+        <p>The tools, which are in various stages of development and currently being prioritised in line with the use cases being presented to the East London Discovery Project, include:</p>
+        <ul>
+            <li class="bullets"><a href="Population Health.htm">Population Health</a>
+            </li>
+        </ul>
+        <h2><a name="APIs"></a>APIs</h2>
+        <p>Access the following Discovery APIs at:</p>
+        <p>Test - <a href="https://deveds.endeavourhealth.net/eds-api/" title="https://deveds.endeavourhealth.net/eds-api/" alt="https://deveds.endeavourhealth.net/eds-api/" target="_blank">https://deveds.endeavourhealth.net/eds-api/</a></p>
+        <p><b>Important:</b> You must have a valid discovery username and password to obtain a valid authentication token. You must have a valid authentication token to call the secure APIs.</p>
+        <table style="width: 100%;border-spacing: 0px 0px;">
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th>API</th>
+                    <th>Details</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-weight: bold;">Authentication</td>
+                    <td style="text-align: left;">Used to obtain a valid authentication token for calling subsequent APIs.</td>
+                    <td style="text-align: left;">&#160;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Get FHIR resource types</td>
+                    <td style="text-align: left;">Returns a list of FHIR resource types, and associated (human readable) names, that Discovery currently recognises, stores, and supports.</td>
+                    <td style="text-align: left;">&#160;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Get patients for NHS number</td>
+                    <td style="text-align: left;">Returns a FHIR bundle containing summaries for all patients known to discovery with the given NHS number.</td>
+                    <td style="text-align: left;">The API will only return patients at organisations that you have protocols, agreements, and access.
+
+</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Get resources for patients
+
+</td>
+                    <td style="text-align: left;">Returns a bundle of FHIR resources of the given types, for the given patients.
+
+</td>
+                    <td style="text-align: left;">The API will only return patients at organisations that you have protocols, agreements, and access.
+
+</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Get flag for patient
+
+</td>
+                    <td style="text-align: left;">Returns the current state of the given flag for the given patient, for example frailty.
+
+</td>
+                    <td style="text-align: left;">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Data"></a>Published data</h2>
+        <h3><a name="Current"></a>Current data sets</h3>
+        <p>The following table shows the datasets that are currently published by different publisher's systems:</p>
+        <div class="my-doos">
+            <div id="parent">
+                <div id="propertyThumbnails">
+                    <table style="border-spacing: 0px 0px;">
+                        <thead>
+                            <tr>
+                                <th style="background-color: #ffffff;padding-left: 15px;padding-right: 15px;padding-top: 15px;padding-bottom: 15px;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #4678A1;">&#160;</th>
+                                <th colspan="2" style="background-color: #4678a1;color: #ffffff;">EMIS Web</th>
+                                <th colspan="2" style="color: #ffffff;background-color: #b2a2c7;">SystmOne</th>
+                                <th style="color: #ffffff;background-color: #f79646;">Vision</th>
+                                <th style="color: #ffffff;background-color: #92d050;">Adastra</th>
+                                <th colspan="4" style="color: #ffffff;background-color: #ff6464;">Cerner<br />Millenium</th>
+                                <th style="color: #ffffff;background-color: #4678a1;">Rio</th>
+                            </tr>
+                            <tr>
+                                <th style="color: #4678a1;background-color: #ffffff;">Data sets</th>
+                                <th class="rotate" style="color: #4678a1;background-color: #cce8ff;">
+                                    <div><span>Primary care GP</span>
+                                    </div>
+                                </th>
+                                <th class="rotate" style="color: #4678a1;background-color: #cce8ff;">
+                                    <div><span>Primary care community</span>
+                                    </div>
+                                </th>
+                                <th class="rotate" style="color: #4678a1;background-color: #e2ccff;">
+                                    <div><span>Primary care GP</span>
+                                    </div>
+                                </th>
+                                <th class="rotate" style="color: #4678a1;background-color: #e2ccff;">
+                                    <div><span>Primary care community</span>
+                                    </div>
+                                </th>
+                                <th class="rotate" style="color: #4678a1;background-color: #ffe2cc;">
+                                    <div><span>Primary care GP</span>
+                                    </div>
+                                </th>
+                                <th class="rotate" style="color: #4678a1;background-color: #e6ffcc;">
+                                    <div><span>Out of hours</span>
+                                    </div>
+                                </th>
+                                <th class="rotate" style="color: #4678a1;background-color: #ffcccc;">
+                                    <div><span>A&amp;E</span>
+                                    </div>
+                                </th>
+                                <th class="rotate" style="color: #4678a1;background-color: #ffcccc;">
+                                    <div><span>Inpatient</span>
+                                    </div>
+                                </th>
+                                <th class="rotate" style="color: #4678a1;background-color: #ffcccc;">
+                                    <div><span>Outpatient</span>
+                                    </div>
+                                </th>
+                                <th class="rotate" style="color: #4678a1;background-color: #ffcccc;">
+                                    <div><span>ADT feed</span>
+                                    </div>
+                                </th>
+                                <th class="rotate" style="color: #4678a1;background-color: #cce8ff;">
+                                    <div><span>Community</span>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Allergies</td>
+                                <td style="background-color: #cce8ff;"> <i class="fas fa-check green"></i></td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"> <i class="fas fa-check green"></i></td>
+                                <td style="background-color: #e2ccff;"> <i class="fas fa-check green"></i></td>
+                                <td style="background-color: #ffe2cc;"> <i class="fas fa-check green"></i></td>
+                                <td style="background-color: #e6ffcc;"> <i class="fas fa-minus grey"></i></td>
+                                <td style="background-color: #ffcccc;"> <i class="fas fa-check green"></i></td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Appointments</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Care episodes</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Diagnoses</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Documents</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Encounters/consultations</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Family history</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Follow ups/diary recall</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Free text</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Immunisations</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Inpatient activity</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Medication</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-check green"></i><sup>1</sup>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Non-scheduled activity</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Observations<sup>2</sup></td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Outpatient activity</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Patient demographics</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Problems</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Procedures</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Referrals</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-hourglass-half orange"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Templates</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Test orders</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Test results/<br />Pathology results</td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e2ccff;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffe2cc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #e6ffcc;"><i class="fas fa-minus grey"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-check green"></i>
+                                </td>
+                                <td style="background-color: #ffcccc;"><i class="fas fa-times red"></i>
+                                </td>
+                                <td style="background-color: #cce8ff;"><i class="fas fa-minus grey"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <p><sup>1</sup>non-coded.</p>
+        <p><sup>2</sup>includes signs, symptoms, biological values, and pathology.</p>
+        <p><i class="fa fa-check green fa-fw"></i> = Data sets available and published to the DDS</p>
+        <p><i class="fa fa-times red fa-fw"></i> = Data sets available but not published to the DDS</p>
+        <p><i class="fas fa-minus grey fa-fw"></i> = Not applicable</p>
+        <p><i class="fa fa-hourglass-half orange fa-fw"></i> = Data sets coming soon</p>
+        <h2><a name="Data2"></a>Data assurance &amp; testing</h2>
+        <p>The Discovery Data Service receives data from publisher organisations that could have:</p>
+        <ul class="bullets">
+            <li class="bullets">Multiple IT systems that are responsible for capturing the data. </li>
+            <li class="bullets">Multiple mechanisms of publishing the data to the DDS. </li>
+            <li class="bullets">Several message or file formats. </li>
+            <li class="bullets">Multiple content taxonomies or code schemes, some standard and some local, and some with no code schemes at all.</li>
+        </ul>
+        <p>This many-to-many relationship between the technical data exchange formats and an individual patient record creates a significant challenge when we try to aggregate and link the data for direct care and secondary uses.</p>
+        <p>The approach that we have taken consists of testing each and every system, extract mechanism, format, taxonomy and code scheme independently against clinical or operational scenarios to make sure that the system is fit for purpose.</p>
+        <p>It should be noted that when data is moved from one system to another it always loses some data or some context; this is referred to as degrade. The objective of the assurance process is to prove that the mechanism involved in transferring the data is fit for purpose and that the data content is good enough for the subscriber use cases.</p>
+        <p>The starting point of the overall assurance process is a publisher data entry scenario, and the end point is a subscriber data usage scenario; test scenarios and test packs are derived from the overall specification, modified by the system extract capability, and narrowed to the scenario of interest. There is no requirement to test the entire data service at any point.</p>
+        <p>Integral to the Discovery Data Service is a comprehensive set of tools for monitoring all access and configuration changes on our cloud platform, we log everything a user does from sign in/sign out to any change to a server or configuration item to create a complete audit trail. Access rules are continually reviewed with only minimal permissions applied unless a change is scheduled to be made. All access is governed by the Clinical Effectiveness Group (CEG) Barts &amp; the London Queen Mary University Information Security Policy.</p>
+        <p>Notifications are generated as data is received at any of our endpoints, this data is then processed into the service with audit logs generated along the way to ensure accuracy and consistency.</p>
+        <p>Our data testing and assurance team have developed an advanced audit log, which is implemented in every transform, meaning that we can view every transform result to make sure that all data published into the DDS is validated at every step in the process and to allow technical and clinical teams to validate and sign off the accuracy of the data feed.</p>
+        <h2><a name="Technolo"></a>Technologies</h2>
+        <p>The Discovery Data Service uses the following resources, technology and software:</p>
+        <p>
+            <img src="Resources/Images/technical resources.png" style="max-width: 75%;mc-float: frame-center;" />
+        </p>
+        <p>For technical and API queries, please contact <a href="mailto:info@discoverydataservice.org?subject=I have a technical query...">info@discoverydataservice.org</a></p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

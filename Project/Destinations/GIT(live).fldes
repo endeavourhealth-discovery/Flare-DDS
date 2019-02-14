@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is LIVE"
+  Host="ftp.myftpserver.com"
+  User="MyAccountId"
+  Password=""
+  Directory="C:\Users\Jo\Documents\My Projects\Git\website-DDS"
+  Port=""
+  ViewUrl="https://www.discoverydataservice.org/Content/Home.htm"
+  Type="scm"
+  ProviderType="Git"
+  Database="file:///C:/Users/Jo/Documents/My Projects/Git/website-DDS/.git"
+  DatabaseRoot="file:///C:/Users/Jo/Documents/My Projects/Git/website-DDS"
+  PushToRemote="true"
+  RemoteRepository="origin"></CatapultDestination>

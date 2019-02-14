@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head> <style>nav.tab-bar {display:none;}</style><style>div.outer-row {max-width: 100% !important;}</style><link href="../Stylesheets/styles.css" rel="stylesheet" type="text/css" /></head>
+    <body>
+        <div class="dds_popup">
+            <MadCap:bodyProxy />
+        </div>
+    </body>
+</html>
