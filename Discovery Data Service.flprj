@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultProject Version="1" xml:lang="en-gb" SourceControlBound="false" Comment="This template is similar to the other Top Navigation Basic template, but it is even simpler. The Home page is more basic, and there is only one stylesheet and one master page." MasterStylesheet="/Content/Resources/Stylesheets/styles.css" MasterStylesheetOverride="True">
+<CatapultProject Version="1" xml:lang="en-gb" SourceControlBound="true" Comment="This template is similar to the other Top Navigation Basic template, but it is even simpler. The Home page is more basic, and there is only one stylesheet and one master page." MasterStylesheet="/Content/Resources/Stylesheets/styles.css" MasterStylesheetOverride="True" SourceControlProviderType="Git" ProjectGuid="9d9fca51-49aa-469c-90c3-7ee82d407eb4">
     <Synchronize>
         <Mapping ProjectPath="Content/Resources/Images/DDS Pipes_NEW (1).png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/Websites/DDS website/pipe images/DDS Pipes_NEW (1).png" />
         <Mapping ProjectPath="Content/Resources/Images/publish subscribe.png" ExternalPath="file:///C:/Users/Jo/Google Drive/Endeavour Health CT/Technical Author (Jo)/Websites/DDS website/Images/publish subscribe.png" />
