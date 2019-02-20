@@ -371,6 +371,11 @@ a.Popup
 	/*padding-right: 150px;*/
 }
 
+.off-canvas-wrapper-inner .outer-row {
+    padding-right: 350px !important; 
+    
+}
+
 .with-footer .off-canvas-content
 {
 	min-height: calc(100vh - 50px) !important;
