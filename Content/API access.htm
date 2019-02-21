@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="topic" style="mc-master-page: url('Resources\MasterPages\Topic.flmsp');">
+    <head><title>API access</title>
+    </head>
+    <body>
+        <h1><a name="APIs"></a>APIs</h1>
+        <p>Access the following Discovery APIs at:</p>
+        <p>Test - <a href="https://deveds.endeavourhealth.net/eds-api/" title="https://deveds.endeavourhealth.net/eds-api/" alt="https://deveds.endeavourhealth.net/eds-api/" target="_blank">https://deveds.endeavourhealth.net/eds-api/</a></p>
+        <p><b>Important:</b> You must have a valid discovery username and password to obtain a valid authentication token. You must have a valid authentication token to call the secure APIs.</p>
+        <table style="width: 100%;border-spacing: 0px 0px;">
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th>API</th>
+                    <th>Details</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-weight: bold;">Authentication</td>
+                    <td style="text-align: left;">Used to obtain a valid authentication token for calling subsequent APIs.</td>
+                    <td style="text-align: left;">&#160;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Get FHIR resource types</td>
+                    <td style="text-align: left;">Returns a list of FHIR resource types, and associated (human readable) names, that Discovery currently recognises, stores, and supports.</td>
+                    <td style="text-align: left;">&#160;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Get patients for NHS number</td>
+                    <td style="text-align: left;">Returns a FHIR bundle containing summaries for all patients known to discovery with the given NHS number.</td>
+                    <td style="text-align: left;">The API will only return patients at organisations that you have protocols, agreements, and access.
+
+							</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Get resources for patients
+
+							</td>
+                    <td style="text-align: left;">Returns a bundle of FHIR resources of the given types, for the given patients.
+
+							</td>
+                    <td style="text-align: left;">The API will only return patients at organisations that you have protocols, agreements, and access.
+
+							</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Get flag for patient
+
+							</td>
+                    <td style="text-align: left;">Returns the current state of the given flag for the given patient, for example frailty.
+
+							</td>
+                    <td style="text-align: left;">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

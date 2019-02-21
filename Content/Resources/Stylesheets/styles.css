@@ -99,6 +99,32 @@ ul li.bullets
 	line-height: 30px;
 }
 
+ul.bullets2
+{
+	width: 90%;
+}
+
+ul li.bullets2::before
+{
+	content: "\2756";
+	font-size: 20px;
+	color: #ff6464;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin: auto;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+	margin-right: 10px;
+}
+
+ul li.bullets2
+{
+	padding-left: 5em;
+	text-indent: -2em;
+	line-height: 30px;
+}
 li
 {
 	margin-bottom: 20px;
@@ -371,10 +397,6 @@ a.Popup
 	/*padding-right: 150px;*/
 }
 
-.off-canvas-wrapper-inner .outer-row {
-    padding-right: 350px !important; 
-    
-}
 
 .with-footer .off-canvas-content
 {
@@ -439,7 +461,7 @@ th.rotate > div
 	float: left;
 	width: 33.33%;
 	padding: 10px;
-	height: 300px;
+	
 	/* Should be removed. Only for demonstration */
 }
 
