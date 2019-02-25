@@ -4,7 +4,7 @@
   Comment="MadCap HTML5 Target"
   Type="WebHelp2"
   Destinations=""
-  GlossaryTermConversion="marked"
+  GlossaryTermConversion="all"
   MoveOutputContentToRoot="false"
   SkinComponents=""
   EnableResponsiveOutput="true"
