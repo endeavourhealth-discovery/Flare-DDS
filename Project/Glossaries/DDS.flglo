@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary>
+  <GlossaryEntry
+    glossTerm="DDS.Term0">
+    <Terms>
+      <Term>My Term</Term>
+    </Terms>
+    <Definition>My definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="DDS.Term1"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>SMI</Term>
+    </Terms>
+    <Definition
+      Link="">Serious Mental Illness</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="DDS.Term3"
+    Stem=""
+    IgnoreCase="false"
+    TermClass="Popup">
+    <Terms>
+      <Term>ODS</Term>
+    </Terms>
+    <Definition
+      Link="">Organisation 
+Data Service (NHS)</Definition>
+  </GlossaryEntry>
+</CatapultGlossary>

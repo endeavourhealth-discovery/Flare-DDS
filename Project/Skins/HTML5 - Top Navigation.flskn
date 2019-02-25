@@ -405,6 +405,13 @@
           <Properties></Properties>
         </Style>
       </Medium>
+      <Style
+        Name="Search Glossary Definition">
+        <Properties>
+          <Property
+            Name="Color">#000000</Property>
+        </Properties>
+      </Style>
     </Styles>
     <Stylesheet></Stylesheet>
   </Stylesheet>

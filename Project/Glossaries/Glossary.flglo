@@ -136,14 +136,4 @@
     <Definition
       Link="">A special target that lets you build and/or publish multiple other targets in a single group (or "batch"). You can schedule batches to run at any time.</Definition>
   </GlossaryEntry>
-  <GlossaryEntry
-    glossTerm="Glossary.Term16"
-    Stem=""
-    IgnoreCase="false">
-    <Terms>
-      <Term>SMI</Term>
-    </Terms>
-    <Definition
-      Link="">Serious Mental Illness</Definition>
-  </GlossaryEntry>
 </CatapultGlossary>

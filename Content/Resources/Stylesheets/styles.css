@@ -125,6 +125,7 @@ ul li.bullets2
 	text-indent: -2em;
 	line-height: 30px;
 }
+
 li
 {
 	margin-bottom: 20px;
@@ -283,6 +284,58 @@ a
 	display: none;
 }
 
+MadCap|glossaryTerm
+{
+	color: #4678a1;
+	width: 500px;
+	padding: 5px;
+	margin: 5px;
+	height: 200px;
+}
+
+MadCap|glossaryProxy
+{
+	width: 500px;
+	height: 100px;
+	margin: 10px;
+	padding: 10px;
+	display: block;
+	color: #ff0000;
+}
+
+MadCap|glossaryTerm.Popup
+{
+	overflow: auto;
+}
+
+MadCap|popupBody
+{
+	z-index: -1;
+	padding: 10px;
+	margin-left: 10px;
+	color: #ffffff;
+	background-color: #3a759f;
+	display: block;
+	font-size: 12pt;
+	vertical-align: middle;
+	white-space: nowrap;
+	word-spacing: normal;
+	text-align: center;
+	width: 400px;
+}
+
+MadCap|popup:hover
+{
+	width: 100px;
+	padding: 5px;
+	margin: 5px;
+}
+
+MadCap|popup:focus
+{
+	background-color: #ff0000;
+}
+
 @media only screen and (min-width: 1024px)
 {
 	.page_toc
@@ -397,7 +450,6 @@ a.Popup
 	/*padding-right: 150px;*/
 }
 
-
 .with-footer .off-canvas-content
 {
 	min-height: calc(100vh - 50px) !important;
@@ -461,7 +513,6 @@ th.rotate > div
 	float: left;
 	width: 33.33%;
 	padding: 10px;
-	
 	/* Should be removed. Only for demonstration */
 }
 
@@ -477,11 +528,10 @@ th.rotate > div
 ul.ripple
 {
 	width: 90%;
-	}
+}
 
 ul li.ripple::before
 {
-	
 	content: '';
 	background: url('../Images/Ripple_icon.png');
 	width: 30px;
@@ -498,7 +548,7 @@ ul li.ripple
 	padding-left: 8em;
 	text-indent: -4em;
 	line-height: 30px;
-	}
+}
 
 ul
 {
