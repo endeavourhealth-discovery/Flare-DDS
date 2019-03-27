@@ -20,8 +20,8 @@
     Title="Technical"
     Link="/Content/Technical.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   <TocEntry
-    Title="Common Information Model"
-    Link="/Content/Requirement Specs/Discovery Data Model.htm"></TocEntry>
+    Title="Documentation"
+    Link="/Content/Documentation.htm"></TocEntry>
   <TocEntry
     Title="Products"
     Link="/Content/Products.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
