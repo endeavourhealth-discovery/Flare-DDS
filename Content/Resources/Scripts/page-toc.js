@@ -1,4 +1,4 @@
-/* based on script from */
+﻿/* based on script from */
 /* https://css-tricks.com/automatic-table-of-contents */ 
 
 $(document).ready(function() {
@@ -22,6 +22,7 @@ $(document).ready(function() {
          el = $(this);
          /* get the heading title */
          title = el.text();
+
          /* get the heading tag, this is capitalised, i.e. 'H2' or 'H3' */
          tag = el.prop("tagName");
       
