@@ -23,9 +23,16 @@
         <link href="../Stylesheets/nomenu.css" rel="stylesheet" type="text/css" />
     </head>
     <body class="with-footer">
-        <MadCap:miniTocProxy />
-        <MadCap:bodyProxy />
-        <MadCap:topicToolbarProxy class="" style="mc-topic-toolbar-items: ;" />
+        <div class="NewRowClass2" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+            <div>
+				<MadCap:bodyProxy />
+				<MadCap:topicToolbarProxy class="" style="mc-topic-toolbar-items: ;" />
+            </div>
+            <div>
+				<MadCap:menuProxy style="mc-toc-depth: -1;mc-context-sensitive: True;mc-include-parent: True;mc-include-siblings: True;mc-include-children: True;text-align: right;border-top-left-radius: 1px;border-top-right-radius: 1px;border-bottom-right-radius: 1px;border-bottom-left-radius: 1px;padding-left: 100px;padding-right: 10px;margin-left: 400px;" mc-linked-toc="$topicHeadings" />
+            </div>
+        </div>
+        
     </body>
     <div class="footer">2017 © Endeavour Health Charitable Trust | Registered Charity No. 1156863 | Available under Apache 2.0 open source<br /></div>
 </html>

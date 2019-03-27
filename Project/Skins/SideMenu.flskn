@@ -11,13 +11,39 @@
         Name="Menu">
         <Properties>
           <Property
-            Name="BackgroundColor">#525252</Property>
+            Name="BackgroundColor">#d3d3d3</Property>
           <Property
-            Name="Width">50%</Property>
+            Name="Color">#ffffff</Property>
           <Property
-            Name="MaxHeight">50%</Property>
+            Name="BorderTopLeftRadius">5px</Property>
           <Property
-            Name="Display">none</Property>
+            Name="BorderTopRightRadius">5px</Property>
+          <Property
+            Name="BorderBottomRightRadius">5px</Property>
+          <Property
+            Name="BorderBottomLeftRadius">5px</Property>
+          <Property
+            Name="BorderTop">none 0px transparent</Property>
+          <Property
+            Name="BorderRight">none 0px transparent</Property>
+          <Property
+            Name="BorderBottom">none 0px transparent</Property>
+          <Property
+            Name="BorderLeft">none 0px transparent</Property>
+          <Property
+            Name="TextAlign">left</Property>
+          <Property
+            Name="TextIndent">0px</Property>
+          <Property
+            Name="WhiteSpace">normal</Property>
+          <Property
+            Name="MarginRight">0px</Property>
+          <Property
+            Name="PaddingRight">10px</Property>
+          <Property
+            Name="PaddingLeft">10px</Property>
+          <Property
+            Name="MarginLeft">30%</Property>
         </Properties>
       </Style>
       <Style
@@ -67,13 +93,22 @@
                 Name="PaddingTop">2px</Property>
             </Properties>
           </StyleClass>
+          <StyleClass
+            Name="Selected">
+            <Properties>
+              <Property
+                Name="Color">#4678a1</Property>
+            </Properties>
+          </StyleClass>
         </Classes>
       </Style>
       <Style
         Name="Menu Item (hover)">
         <Properties>
           <Property
-            Name="Color">#000000</Property>
+            Name="Color">#4678a1</Property>
+          <Property
+            Name="FontWeight">bold</Property>
         </Properties>
       </Style>
       <Medium
