@@ -11,25 +11,25 @@
             <img src="../Resources/Images/data model spec roadmap.png" />
         </p>
         <p class="caption">Specification road map showing the current page in green and subsequent dependent pages</p>
-        <p>This page provides an overview of the Discovery Data Model and specifies the requirements that the common data model must meet.</p>
-        <h2 class="numbered">Common data model overview</h2>
-        <p>The common data model has an open and transparent design, includes a wide breadth of data types, and is human readable.</p>
+        <p>This page provides an overview of the Discovery Data Model and specifies the requirements that a common data model must meet.</p>
+        <h2 class="numbered">Common Data Model overview</h2>
+        <p>The Common Data Model has an open and transparent design, includes a wide breadth of data types, and is human readable.</p>
         <h3 class="numbered">Objectives</h3>
-        <p>The common data model enables you to:</p>
+        <p>The Common Data Model enables you to:</p>
         <ul>
             <li class="bullets">visualise and easily understand the types of health data held  in an individual’s health record.</li>
             <li class="bullets">visualise and easily understand the types of data held across a population.</li>
             <li class="bullets">apply a query at both an individual and a population level so that the  query definition can be shared, scrutinised, and reused across a number of different implementations.</li>
             <li class="bullets">rapidly design and implement systems that store and access health data that is derived from multiple source systems from both the individual and population health perspective.</li>
         </ul>
-        <h3 class="numbered">How the model helps to achieve the objectives</h3>
-        <p>The common data model is key to  achieving the objectives by enabling other software applications to:</p>
+        <h3 class="numbered">How?</h3>
+        <p>The Common Data Model is key to  achieving the objectives by enabling other software applications to:</p>
         <ul>
             <li class="bullets">provide visual representations of health data held  in an individual’s health record.</li>
             <li class="bullets">provide model navigation including conventional folder based navigation or node/ graph navigation with free text search support.</li>
             <li class="bullets">provide a multi-taxonomy approach to categorising data.</li>
         </ul>
-        <p>The common data model also supports:</p>
+        <p>The Common Data Model also supports:</p>
         <ul>
             <li class="bullets">constrained and simple query definitions through associated data points.</li>
             <li class="bullets">links to summary statistics to give insights into likely query results prior to the execution of queries.</li>
@@ -39,16 +39,71 @@
             <li class="bullets">a library of predefined query definitions and related artefacts such as code sets, which can be distributed and accessed independently of other technologies.</li>
             <li class="bullets">sharing of query logic across any community regardless of whether or not the queries are applied to model conformant record stores.</li>
         </ul>
-        <h3 class="numbered">What the model is not</h3>
-        <p>The common data model is not:</p>
+        <h3 class="numbered">What it isn't</h3>
+        <p>The Common Data Model is not:</p>
         <ul>
             <li class="bullets">a proposed standard for storing or communicating electronic health records.<br /><b>Note:</b> The model organises data that has been stored; the categorisation is determined by information requirements and attribute patterns in the submitted data.</li>
             <li class="bullets">a semantic ontology - the model is semantically passive.<br /><b>Note:</b> The model does include ontologies but it is the responsibility of the source ontology, such as Snomed-CT to make sure that the meanings of the concepts are consistent.</li>
             <li class="bullets">a proposed approach to entering or displaying data.<br /><b>Note:</b> the model recognises and categorises the patterns created when data is entered.</li>
         </ul>
+        <h3 class="numbered">Why?</h3>
+        <p>Approaches to modelling data vary and change over time. There is no consensus as to the way forward yet. From time to time, particular health services elect to use particular standards for particular purposes for a period of time. Standards evolve and new versions have to be supported; this is a continuous evolution.</p>
+        <p>It is generally accepted that there is no prospect of even one <span style="background-color: #ffff00;">country </span>converging to a common model of health data and information any time soon. Population health also requires access to environmental, social, and economic data; there is likewise no accepted standard for data across these other domains.</p>
+        <p>Many argue that even if there was a common model, there is a need for innovation and new formats will be needed. Therefore the emphasis has been on systems being able to communicate with other systems via standard message formats.</p>
+        <p>More recently people have come to understand that there has to be a shared understanding of how data is stored and processed within systems (at least logically).  There is a greater acceptance that there could be a shared  representation of data across a particular communicating community.</p>
+        <p>In answer to the question as whether to have yet another data model, the choices are:</p>
+        <ol>
+            <li>Select a candidate standard already in use and adopt it.</li>
+            <li>Select a candidate standard, modify it and adopt it.</li>
+            <li>Design and implement a new approach either from the ground up or derived from one or more standards.</li>
+        </ol>
+        <p>The option selected will be determined by the requirements. Therefore requirements must be specified in advance of the decision.</p>
+        <p>The following section lists requirements for a common data model.</p>
         <h2 class="numbered">Requirements</h2>
         <p><b>Important:</b> The words <i>must</i> and <i>will</i> imply mandatory requirements.</p>
-        <h3 class="numbered">Scope of the Data Model</h3>
-        <p>The Data Model must be capable of supporting:</p>
+        <h3 class="numbered">Scope</h3>
+        <p>A common data model must support:</p>
+        <ul>
+            <li class="bullets">Personal health record data; originally received from care management systems (professional or citizen based).
+</li>
+            <li class="bullets">Personal health record structures; to be presented clearly when accessed by an other software application.</li>
+            <li class="bullets">Population health data; including genotypic, phenotypic, disease, environmental, social, and economic factors. </li>
+        </ul>
+        <h3 class="numbered">Governance and consent</h3>
+        <p>The data model must include personal consent, governance, and record ownership policies.</p>
+        <p><b>Note:</b> The implementation of those policies, during query or data access, is not part of the data model.</p>
+        <p><b>Important:</b> Any interpretation of records must take account of governance and consent in addition to interpreting data model queries.</p>
+        <h3 class="numbered">Breadth of model</h3>
+        <p>The data model must encompass the (historically separate categories) of model data that are:</p>
+        <ul>
+            <li class="bullets">Definitions of the structure of health record entries and the relationships between the entries as envisaged for the purposes of holding individuals record.</li>
+            <li class="bullets">Definitions of health record data entries and their relationships envisaged for the purposes of analysing populations.</li>
+            <li class="bullets">Terminologies, taxonomies, or ontologies and their relationship  to the structures when used in records.</li>
+            <li class="bullets">Data sets, code sets, and query definitions.</li>
+        </ul>
+        <h3 class="numbered">International terminologies</h3>
+        <p>The model must incorporate the following international taxonomies and ontologies, including the semantic definitions and relationships defined within these ontologies together with their definitional relationships:</p>
+        <ul>
+            <li class="bullets">Snomed-CT</li>
+            <li class="bullets">DM+D</li>
+            <li class="bullets">Read 2 and Read 3</li>
+            <li class="bullets">ICD10</li>
+            <li class="bullets">OPCS-4</li>
+            <li class="bullets">PRSB record standards</li>
+        </ul>
+        <h3 class="numbered">Structure based standards</h3>
+        <p>The model must reflect data that has been submitted from systems that support the following structural constructs:</p>
+        <ul>
+            <li class="bullets">HL7 FHIR STU4 resources and resource profiles</li>
+            <li class="bullets">ISO 13606-1, 13606-2</li>
+        </ul>
+        <h3 class="numbered">NHS standard messages</h3>
+        <p>Subject to mapping (human) resource availability, the model must accept inbound data and provide outbound data in the following NHS standard formats:</p>
+        <ul>
+            <li class="bullets">HL7 V2 ADT</li>
+            <li class="bullets">HL7 FHIR (STU 2 and above)</li>
+            <li class="bullets">NHS Data Dictionary (CDS)</li>
+        </ul>
+        <p>&#160;</p>
     </body>
 </html>

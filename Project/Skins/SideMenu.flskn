@@ -11,8 +11,6 @@
         Name="Menu">
         <Properties>
           <Property
-            Name="BackgroundColor">#d3d3d3</Property>
-          <Property
             Name="Color">#ffffff</Property>
           <Property
             Name="BorderTopLeftRadius">5px</Property>
@@ -44,6 +42,10 @@
             Name="PaddingLeft">10px</Property>
           <Property
             Name="MarginLeft">30%</Property>
+          <Property
+            Name="BackgroundColor">#a9a9a9</Property>
+          <Property
+            Name="Width">400px</Property>
         </Properties>
       </Style>
       <Style
@@ -98,6 +100,8 @@
             <Properties>
               <Property
                 Name="Color">#4678a1</Property>
+              <Property
+                Name="FontWeight">bold</Property>
             </Properties>
           </StyleClass>
         </Classes>
@@ -109,6 +113,8 @@
             Name="Color">#4678a1</Property>
           <Property
             Name="FontWeight">bold</Property>
+          <Property
+            Name="BackgroundColor">#dcdcdc</Property>
         </Properties>
       </Style>
       <Medium
