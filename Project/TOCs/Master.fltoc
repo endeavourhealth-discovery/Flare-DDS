@@ -26,6 +26,9 @@
     Title="Partners"
     Link="/Content/Partners.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   <TocEntry
+    Title="Documentation"
+    Link="/Content/Documentation.htm" />
+  <TocEntry
     Title="Contact"
     Link="/Content/Contact.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
 </CatapultToc>

@@ -43,9 +43,9 @@
           <Property
             Name="MarginLeft">30%</Property>
           <Property
-            Name="BackgroundColor">#a9a9a9</Property>
-          <Property
             Name="Width">400px</Property>
+          <Property
+            Name="BackgroundColor">#4678a1</Property>
         </Properties>
       </Style>
       <Style
@@ -99,9 +99,11 @@
             Name="Selected">
             <Properties>
               <Property
-                Name="Color">#4678a1</Property>
-              <Property
                 Name="FontWeight">bold</Property>
+              <Property
+                Name="BackgroundGradient">vertical #4678a1 #4678a1</Property>
+              <Property
+                Name="Color">#4678a1</Property>
             </Properties>
           </StyleClass>
         </Classes>
@@ -110,12 +112,27 @@
         Name="Menu Item (hover)">
         <Properties>
           <Property
-            Name="Color">#4678a1</Property>
-          <Property
             Name="FontWeight">bold</Property>
           <Property
             Name="BackgroundColor">#dcdcdc</Property>
+          <Property
+            Name="Color">#ffffff</Property>
+          <Property
+            Name="BackgroundGradient">vertical #4678a1 #4678a1</Property>
         </Properties>
+        <Classes>
+          <StyleClass
+            Name="Selected">
+            <Properties>
+              <Property
+                Name="Color">#4678a1</Property>
+              <Property
+                Name="BackgroundGradient">vertical #4678a1 #4678a1</Property>
+              <Property
+                Name="BackgroundColor">#4678a1</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
       </Style>
       <Medium
         Name="Mobile">
