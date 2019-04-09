@@ -13,7 +13,9 @@
   Skin="/Project/Skins/HTML5 - Top Navigation.flskn"
   ConditionTagExpression="include[&quot;General.Audience A&quot;] exclude[&quot;General.Audience B&quot;] "
   GetLatestBeforeCompile="true"
-  TabletBreakpoint="1024">
+  TabletBreakpoint="1024"
+  EnableSitemap="true"
+  SitemapWebUrl="https://www.discoverydataservice.org">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
