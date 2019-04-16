@@ -561,8 +561,8 @@ h2 {counter-reset: h3
 }
 
 
-h2.numbered:before {counter-increment: h2; content: counter(h2) ". "}
-h3.numbered:before {counter-increment: h3; content: counter(h2) "." counter(h3) ". "}
+h2.numbered:before {counter-increment: h2; content: counter(h2) " "}
+h3.numbered:before {counter-increment: h3; content: counter(h2) "." counter(h3) " "}
 
 h2.nocount:before, h3.nocount:before {content: ""; counter-increment: none} 
 
@@ -577,11 +577,11 @@ h2.nocount:before, h3.nocount:before {content: ""; counter-increment: none}
 
 .numbered div.sticky-menu>ul>ul>li>a:before {
 	counter-increment: mh2;
-	content: counter(mh2) ". ";
+	content: counter(mh2) " ";
 }
 
 .numbered div.sticky-menu>ul>ul>ul>li>a:before {
 	counter-increment: mh3;
-	content: counter(mh2) "." counter(mh3) ". ";
+	content: counter(mh2) "." counter(mh3) " ";
 }
 
