@@ -46,7 +46,7 @@ h1
 
 h2
 {
-	font-size: 1.2em;
+	font-size: 1.3em;
 	font-weight: bold;
 	margin-bottom: 4px;
 	margin-top: 20px;
@@ -122,6 +122,84 @@ ul li.bullets2::before
 ul li.bullets2
 {
 	padding-left: 5em;
+	text-indent: -2em;
+	line-height: 30px;
+}
+
+ul.source
+{
+	width: 90%;
+}
+
+ul li.source::before
+{
+	content: "\2756 Data source:";
+	font-size: 17px;
+	color: #ff6464;
+	font-weight: normal;
+	display: inline-block;
+	margin: auto;
+	height: 100%;
+	vertical-align: middle;
+	text-align: left;
+	margin-right: 10px;
+}
+
+ul li.source
+{
+	padding-left: 1.5em;
+	text-indent: -2em;
+	line-height: 30px;
+}
+
+ul.sets
+{
+	width: 90%;
+}
+
+ul li.sets::before
+{
+	content: "\2756 Data sets:";
+	font-size: 17px;
+	color: #ff6464;
+	font-weight: normal;
+	display: inline-block;
+	margin: auto;
+	height: 100%;
+	vertical-align: middle;
+	text-align: left;
+	margin-right: 10px;
+}
+
+ul li.sets
+{
+	padding-left: 1.5em;
+	text-indent: -2em;
+	line-height: 30px;
+}
+
+ul.purpose
+{
+	width: 90%;
+}
+
+ul li.purpose::before
+{
+	content: "\2756 Purpose:";
+	font-size: 17px;
+	color: #ff6464;
+	font-weight: normal;
+	display: inline-block;
+	margin: auto;
+	height: 100%;
+	vertical-align: middle;
+	text-align: left;
+	margin-right: 10px;
+}
+
+ul li.purpose
+{
+	padding-left: 1.5em;
 	text-indent: -2em;
 	line-height: 30px;
 }
@@ -276,7 +354,7 @@ a
 {
 	color: #4678a1;
 	text: bold;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 #page-toc	/* container for topic navigation control */
@@ -506,14 +584,41 @@ th.rotate > div
 	white-space: nowrap;
 }
 
+/* Create 2 equal columns that floats next to each other */
+
+.column2
+{
+	float: left;
+	width: 50%;
+	padding: 15px;
+	text-align: left;
+		/* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+
 /* Create three equal columns that floats next to each other */
 
-.column
+.column3
 {
 	float: left;
 	width: 33.33%;
-	padding: 10px;
-	/* Should be removed. Only for demonstration */
+	padding: 15px;
+	text-align: left;
+		/* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+
+/* Create four equal columns that floats next to each other */
+
+.column4
+{
+	float: left;
+	width: 25%;
+	padding: 30px;
+	text-align: left;
+		/* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */

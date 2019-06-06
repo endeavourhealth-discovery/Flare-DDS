@@ -21,7 +21,7 @@
     Link="/Content/Technical.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   <TocEntry
     Title="Products"
-    Link="/Content/Products.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+    Link="/Content/Products-columns.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
   <TocEntry
     Title="Partners"
     Link="/Content/Partners.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
