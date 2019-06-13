@@ -23,6 +23,9 @@
     Title="Products"
     Link="/Content/Products.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
   <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/draft product page.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  <TocEntry
     Title="Partners"
     Link="/Content/Partners.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   <TocEntry
