@@ -20,6 +20,8 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <!--<link href="../Stylesheets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" /-->
+        <script src="https://kit.fontawesome.com/dc50f3ffb3.js">
+        </script>
     </head>
     <body class="with-footer">
         <div class="page_toc" id="page-toc">

@@ -13,8 +13,9 @@
 		</script>
         <script type="text/javascript" src="../Scripts/page-toc.js">
         </script>
-        <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous">
+        <script defer="defer" src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous">
         </script>
+		<script src="https://kit.fontawesome.com/dc50f3ffb3.js"></script>
         <meta charset="utf-8" />
         <meta name="description" content="" />
         <meta name="author" content="" />
@@ -29,5 +30,5 @@
         <MadCap:miniTocProxy />
         <MadCap:topicToolbarProxy class="" style="mc-topic-toolbar-items: ;" />
     </body>
-    <div class="footer">2017 © Endeavour Health Charitable Trust | Registered Charity No. 1156863 | Available under Apache 2.0 open source<br /></div>
+    <div class="footer">2017 © Endeavour Health Charitable Trust | Registered Charity No. 1156863 | Available under Apache 2.0 open source | Powered by LHS Ltd<br /></div>
 </html>
