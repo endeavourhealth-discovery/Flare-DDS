@@ -209,6 +209,34 @@ li
 	margin-bottom: 20px;
 }
 
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+	color: #4678A1;
+	font-weight: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .api::before {
+    font-family: "Font Awesome 5 Pro"; 
+	font-weight: 900; 
+	content: "\f085";
+  }
+
+  .extract::before {
+    font-family: "Font Awesome 5 Pro"; 
+	font-weight: 900; 
+	content: "\f093";
+  }
+
+  .query::before {
+    font-family: "Font Awesome 5 Pro"; 
+	font-weight: 900;
+	content: "\f059";
+  }
+
 MadCap|breadcrumbsProxy
 {
 	border-bottom: none;
