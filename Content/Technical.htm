@@ -23,6 +23,8 @@
             </li>
             <li class="bullets"><a href="#Componen">Components</a>
             </li>
+            <li class="bullets"><a href="#APIs">APIs</a>
+            </li>
             <li class="bullets"><a href="#Manageme">Management tools</a>
             </li>
             <li class="bullets"><a href="#Query">Query and reporting tools</a>
@@ -34,7 +36,6 @@
             <li class="bullets"><a href="#Technolo">Technologies</a>
             </li>
         </ul>
-        <p>For API information, see <a href="https://devgateway.discoverydataservice.net/eds-api/" target="_blank">Discovery APIs</a>.</p>
         <h2><a name="Architec"></a>Architecture</h2>
         <p>The following diagram explains the underlying architecture and the basic publication to subscription pathways that data must follow. </p>
         <p>
@@ -49,6 +50,84 @@
         <h2><a name="Componen"></a>Components</h2>
         <p>The following diagram illustrates the various logical components that make up the Discovery Data Service:</p>
         <img src="Resources/Images/DDS components.png" usemap="#map1" style="mc-float: frame-center;max-width: 100%;" />
+        <h2><a name="APIs"></a>APIs</h2>
+        <p>Access the following Discovery APIs at:</p>
+        <p>Test - <a href="https://devgateway.discoverydataservice.net/eds-api/" title="https://devgateway.discoverydataservice.net/eds-api/" alt="https://devgateway.discoverydataservice.net/eds-api/" target="_blank">https://devgateway.discoverydataservice.net/eds-api/</a></p>
+        <p><b>Important:</b> You must have a valid discovery username and password to obtain a valid authentication token. You must have a valid authentication token to call the secure APIs.</p>
+        <table style="width: 100%;border-spacing: 0px 0px;">
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th>API</th>
+                    <th>Details</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#authentication" target="_blank" name="Authentication">Authentication</a>
+                    </td>
+                    <td style="text-align: left;">Used to obtain a valid authentication token for calling subsequent APIs.</td>
+                    <td style="text-align: left;">&#160;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#resourceTypes" target="_blank" name="Get_FHIR">Get FHIR resource types</a>
+                    </td>
+                    <td style="text-align: left;">Returns a list of FHIR resource types, and associated (human readable) names, that Discovery currently recognises, stores, and supports.</td>
+                    <td style="text-align: left;">&#160;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#patientByNHS" target="_blank" name="Get_Patients">Get patients for NHS number</a>
+                    </td>
+                    <td style="text-align: left;">Returns a FHIR bundle containing summaries for all patients known to discovery with the given NHS number.</td>
+                    <td style="text-align: left;">
+                        <p>See also:</p>
+                        <p><a href="#FHIR">FHIR profile resources</a>
+                        </p>
+                        <p><a href="https://github.com/endeavourhealth/FHIR-Profiles/tree/master/Profiles/PrimaryCare/Resources" target="_blank">GitHub FHIR Profiles repository</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#patientResources" target="_blank" name="Get_resources">Get resources for patients</a>
+                    </td>
+                    <td style="text-align: left;">Returns a bundle of FHIR resources of the given types, for the given patients.
+
+					</td>
+                    <td style="text-align: left;"><![CDATA[
+					]]></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#adminResources" target="_blank" name="Get_referenced_resource">Get referenced resource</a>
+                    </td>
+                    <td style="text-align: left;">Returns details of the requested resource reference such as doctors, locations, or organisations.
+
+					</td>
+                    <td style="text-align: left;"><![CDATA[
+
+					]]></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#patientFlag" target="_blank" name="Get_flag">Get flag for patient</a>
+                    </td>
+                    <td style="text-align: left;">Returns the current state of the given flag for the given patient, for example frailty.
+
+					</td>
+                    <td style="text-align: left;">&#160;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#uprn" target="_blank" name="UPRN">UPRN lookup</a>
+                    </td>
+                    <td style="text-align: left;">Used to return a unique property reference number, or an unmatched response, from a patient address.
+					</td>
+                    <td style="text-align: left;">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><b>Important:</b> The APIs and algorithms will only use data, return resources, or identify patients that you have protocols, agreements, and access for.</p>
+        <p>If you want to test our APIs against your own software, <a href="https://devgateway.discoverydataservice.net/eds-api/access.html" target="_blank">register your interest</a>.</p>
         <h2><a name="Manageme"></a>Management tools</h2>
         <p>The Discovery Data Service hosts a number of web applications and web application APIs for managing the data service.</p>
         <p>We have a skilled and experienced team developing tools and utilities to maximise the benefits of a single source of data.</p>
