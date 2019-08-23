@@ -70,6 +70,7 @@ h4
 ul
 {
 	list-style: none;
+	margin-block-start: 8px;
 }
 
 ul.bullets
@@ -96,7 +97,7 @@ ul li.bullets
 {
 	padding-left: 2em;
 	text-indent: -2em;
-	line-height: 8px;
+	line-height: 18px;
 }
 
 ul.bullets2
@@ -206,7 +207,7 @@ ul li.purpose
 
 li
 {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .bullet
