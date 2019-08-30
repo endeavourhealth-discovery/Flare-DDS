@@ -8,16 +8,6 @@
     <Definition>My definition</Definition>
   </GlossaryEntry>
   <GlossaryEntry
-    glossTerm="DDS.Term1"
-    Stem=""
-    IgnoreCase="false">
-    <Terms>
-      <Term>SMI</Term>
-    </Terms>
-    <Definition
-      Link="">Serious Mental Illness</Definition>
-  </GlossaryEntry>
-  <GlossaryEntry
     glossTerm="DDS.Term3"
     Stem=""
     IgnoreCase="false"

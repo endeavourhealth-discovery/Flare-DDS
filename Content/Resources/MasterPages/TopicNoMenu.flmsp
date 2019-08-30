@@ -20,12 +20,14 @@
         <meta name="author" content="" />
         <!--<link href="../Stylesheets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" /-->
         <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" type="text/css" />
-    	<link href="../Stylesheets/nomenu.css" rel="stylesheet" type="text/css" />
-	<script src="https://kit.fontawesome.com/dc50f3ffb3.js"></script>
-	</head>
+        <link href="../Stylesheets/nomenu.css" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/dc50f3ffb3.js">
+        </script>
+    </head>
     <body class="with-footer">
         <MadCap:bodyProxy />
         <MadCap:topicToolbarProxy class="" style="mc-topic-toolbar-items: ;" />
     </body>
-    <div class="footer">2017 © Endeavour Health Charitable Trust | Registered Charity No. 1156863 | Available under Apache 2.0 open source<br /></div>
+    <div class="footer">2019 © | Discovery Health and Care Data Service | CIC
+Company No. 11952385 | Available under Apache 2.0 open source | Powered by LHS Ltd<br /></div>
 </html>

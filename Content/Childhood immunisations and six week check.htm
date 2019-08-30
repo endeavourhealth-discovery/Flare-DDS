@@ -4,11 +4,594 @@
     </head>
     <body>
         <h1>Childhood immunisations and six week check</h1>
+        <h2>Project summary</h2>
         <p>The childhood immunisations extract provides the <a href="https://www.nelft.nhs.uk/services-waltham-forest-child-health-administration" target="_blank">North East London Child Health Information Service</a> (CHIS) Hub with child heath data from Waltham Forest CCG GP systems.</p>
         <p>The DDS delivers an extract that contains changes in  GP&#160;immunisation and six week baby check data as specified in the required datasets. </p>
         <p>The daily extract (delta) provides an update on changes made to the defined criteria over the past 24 hours; so that the hub and GP systems are in sync.</p>
         <p>The extract includes data from all patients who are aged between 0-19 years old and who are registered at Waltham Forest CCG GP practices.</p>
-        <p><a href="Products-columns.htm">Back to Products</a>
+        <h2>Project population</h2>
+        <p>Waltham Forest CCG GP practices.</p>
+        <h2>Project cohort</h2>
+        <p>All patients aged 0 - 19, who are registered at GP practices in Waltham Forest.</p>
+        <h2>Project criteria</h2>
+        <div>
+            <MadCap:expanding>
+                <MadCap:expandingHead><span class="bullet">GP practice: </span>
+                </MadCap:expandingHead>
+                <MadCap:expandingBody>
+                    <ul>
+                        <li class="bullets2">Site ID</li>
+                        <li class="bullets2">Name</li>
+                        <li class="bullets2">ODS code</li>
+                    </ul>
+                </MadCap:expandingBody>
+            </MadCap:expanding>
+        </div>
+        <div>
+            <MadCap:expanding>
+                <MadCap:expandingHead><span class="bullet">Patient details: </span>
+                </MadCap:expandingHead>
+                <MadCap:expandingBody>
+                    <ul>
+                        <li class="bullets2">NHS number</li>
+                        <li class="bullets2">Full address/postcode</li>
+                        <li class="bullets2">Gender</li>
+                        <li class="bullets2">Date of birth</li>
+                        <li class="bullets2">Ethnicity</li>
+                    </ul>
+                </MadCap:expandingBody>
+            </MadCap:expanding>
+        </div>
+        <div>
+            <MadCap:expanding>
+                <MadCap:expandingHead><span class="bullet">QOF: </span>
+                </MadCap:expandingHead>
+                <MadCap:expandingBody>
+                    <ul>
+                        <li class="bullets2">QOF code</li>
+                        <li class="bullets2">QOF assignment date</li>
+                    </ul>
+                </MadCap:expandingBody>
+            </MadCap:expanding>
+        </div>
+        <div>
+            <MadCap:expanding>
+                <MadCap:expandingHead><span class="bullet">Vaccination codes: </span>
+                </MadCap:expandingHead>
+                <MadCap:expandingBody>
+                    <ul>
+                        <li class="bullets2">ZV030	[V]Cholera vaccination</li>
+                        <li class="bullets2">ZV047	[V]Common cold vaccination</li>
+                        <li class="bullets2">ZV035	[V]Diphtheria vaccination</li>
+                        <li class="bullets2">ZV063	[V]Diphtheria-tetanus-pertussis with poliomyelitis (DTP + polio) vaccination</li>
+                        <li class="bullets2">ZV061	[V]Diphtheria-tetanus-pertussis, combined (DTP) vaccination</li>
+                        <li class="bullets2">ZV048	[V]Influenza vaccination</li>
+                        <li class="bullets2">ZV042	[V]Measles vaccination</li>
+                        <li class="bullets2">ZV064	[V]Measles-mumps-rubella (MMR) vaccination</li>
+                        <li class="bullets2">ZV04	[V]Need for prophylactic vaccination and inoculation against certain viral diseases</li>
+                        <li class="bullets2">ZV036	[V]Pertussis vaccination</li>
+                        <li class="bullets2">ZV040	[V]Poliomyelitis vaccination</li>
+                        <li class="bullets2">ZV043	[V]Rubella vaccination</li>
+                        <li class="bullets2">ZV041	[V]Smallpox vaccination	</li>
+                        <li class="bullets2">ZV037	[V]Tetanus toxoid vaccination</li>
+                        <li class="bullets2">ZV032	[V]Tuberculosis (BCG) vaccination
+</li>
+                        <li class="bullets2">XaFTh	1st Japanese encephalitis vaccination
+</li>
+                        <li class="bullets2">XaFTi	2nd Japanese encephalitis vaccination
+							</li>
+                        <li class="bullets2">XaFTj	3rd Japanese encephalitis vaccination
+							</li>
+                        <li class="bullets2">6579	Booster anthrax vaccination
+							</li>
+                        <li class="bullets2">6513	Booster cholera vaccination
+							</li>
+                        <li class="bullets2">65MG	Booster combined hepatitis A and B vaccination
+						</li>
+                        <li class="bullets2">65J4	Booster diphtheria and tetanus double vaccination
+							</li>
+                        <li class="bullets2">XaNdZ	Booster diphtheria tetanus and five component acellular pertussis, haemophilus influenzae type b, inactivated polio vaccination
+							</li>
+                        <li class="bullets2">XaPti	Booster diphtheria tetanus and three component acellular pertussis, haemophilus influenzae type b, inactivated polio vaccination
+							</li>
+                        <li class="bullets2">6544	Booster diphtheria vaccination
+							</li>
+                        <li class="bullets2">XaIPb	Booster diphtheria, tetanus and acellular pertussis (DTaP) vaccination
+</li>
+                        <li class="bullets2">XaIPv	Booster diphtheria, tetanus, acellular pertussis (DTaP) and polio vaccination
+							</li>
+                        <li class="bullets2">XaLvG	Booster diphtheria, tetanus, acellular pertussis and inactivated polio vaccination
+							</li>
+                        <li class="bullets2">XaONV	Booster diphtheria, tetanus, acellular pertussis, haemophilus influenzae type b, inactivated polio vaccination
+							</li>
+                        <li class="bullets2">657D	Booster haemophilus B vaccination
+							</li>
+                        <li class="bullets2">XaIed	Booster hepatitis A and typhoid vaccination
+							</li>
+                        <li class="bullets2">XaJhz	Booster hepatitis A junior vaccination
+	</li>
+                        <li class="bullets2">65FD	Booster hepatitis A vaccination
+														</li>
+                        <li class="bullets2">65F4	Booster hepatitis B vaccination
+</li>
+                        <li class="bullets2">XaLK4	Booster influenza vaccination
+							</li>
+                        <li class="bullets2">XaG0H	Booster Japanese encephalitis vaccination
+							</li>
+                        <li class="bullets2">Xaees	Booster meningitis B vaccination
+							</li>
+                        <li class="bullets2">XaaXa	Booster meningitis C vaccination
+</li>
+                        <li class="bullets2">XaIeO	Booster pneumococcal vaccination
+							</li>
+                        <li class="bullets2">6584	Booster polio vaccination
+							</li>
+                        <li class="bullets2">XaIrG	Booster tetanus and low dose diphtheria vaccination
+							</li>
+                        <li class="bullets2">65L4	Booster tetanus and polio vaccination
+							</li>
+                        <li class="bullets2">6564	Booster tetanus vaccination
+							</li>
+                        <li class="bullets2">XaLK7	Booster tuberculosis (BCG) vaccination
+							</li>
+                        <li class="bullets2">6523	Booster typhoid vaccination
+							</li>
+                        <li class="bullets2">XaQhk	CELVAPAN - first influenza A (H1N1v) 2009 vaccination given
+</li>
+                        <li class="bullets2">XaQhk	CELVAPAN - first influenza A (H1N1v) 2009 vaccination given
+							</li>
+                        <li class="bullets2">XaQhl	CELVAPAN - second influenza A (H1N1v) 2009 vaccination given
+							</li>
+                        <li class="bullets2">651	Cholera vaccination
+							</li>
+                        <li class="bullets2">651Z	Cholera vaccination NOS
+							</li>
+                        <li class="bullets2">XaE4T	Combined hepatitis A and B vaccination
+							</li>
+                        <li class="bullets2">Xabyv	Combined hepatitis A and B vaccination contraindicated
+							</li>
+                        <li class="bullets2">XE2b2	Diphtheria and tetanus double and polio vaccination
+							</li>
+                        <li class="bullets2">65KZ	Diphtheria and tetanus double and polio vaccination NOS
+							</li>
+                        <li class="bullets2">XE1Si	Diphtheria and tetanus double vaccination
+							</li>
+                        <li class="bullets2">XaK4s	Diphtheria tetanus and five component acellular pertussis, haemophilus influenzae type b, inactivated polio vaccination
+							</li>
+                        <li class="bullets2">654	Diphtheria vaccination
+</li>
+                        <li class="bullets2">65I	Diphtheria, pertussis and tetanus triple and polio vaccination
+							</li>
+                        <li class="bullets2">65IZ	Diphtheria, pertussis and tetanus triple and polio vaccination NOS
+							</li>
+                        <li class="bullets2">65H	Diphtheria, pertussis and tetanus triple vaccination
+							</li>
+                        <li class="bullets2">65HZ	Diphtheria, pertussis and tetanus triple vaccination NOS
+							</li>
+                        <li class="bullets2">65F7	Fifth hepatitis B vaccination
+							</li>
+                        <li class="bullets2">Xaakl	Fifth rabies vaccination
+							</li>
+                        <li class="bullets2">6575	First anthrax vaccination
+							</li>
+                        <li class="bullets2">XaKMz	First booster low dose diphtheria, tetanus and inactivated polio vaccination
+							</li>
+                        <li class="bullets2">6511	First cholera vaccination
+							</li>
+                        <li class="bullets2">65MD	First combined hepatitis A and B vaccination
+							</li>
+                        <li class="bullets2">Xaa4a	First combined paediatric hepatitis A and B vaccination
+							</li>
+                        <li class="bullets2">65J1	First diphtheria and tetanus double vaccination
+							</li>
+                        <li class="bullets2">XaK4t	First diphtheria tetanus and five component acellular pertussis, haemophilus influenzae type b, inactivated polio vaccination
+</li>
+                        <li class="bullets2">6541	First diphtheria vaccination
+							</li>
+                        <li class="bullets2">65I1	First diphtheria, pertussis and tetanus triple and polio vaccination
+							</li>
+                        <li class="bullets2">65H1	First diphtheria, pertussis and tetanus triple vaccination
+							</li>
+                        <li class="bullets2">XaJky	First diphtheria, tetanus and acellular pertussis (DTaP) vaccination
+							</li>
+                        <li class="bullets2">XagJH	First diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination
+							</li>
+                        <li class="bullets2">XaJo7	First diphtheria, tetanus, acellular pertussis (DTaP) and polio vaccination
+							</li>
+                        <li class="bullets2">XaCEP	First DTP polio and Hib vaccination
+</li>
+                        <li class="bullets2">657A	First haemophilus B vaccination
+							</li>
+                        <li class="bullets2">XaXJI	First Haemophilus influenzae type B and meningitis C vaccination
+							</li>
+                        <li class="bullets2">XaEc9	First hepatitis A and typhoid vaccination
+							</li>
+                        <li class="bullets2">XaEFH	First hepatitis A junior vaccination
+							</li>
+                        <li class="bullets2">65FA	First hepatitis A vaccination
+							</li>
+                        <li class="bullets2">Xaa4V	First hepatitis B junior vaccination
+							</li>
+                        <li class="bullets2">Xaa4V	First hepatitis B junior vaccination
+							</li>
+                        <li class="bullets2">65F1	First hepatitis B vaccination
+							</li>
+                        <li class="bullets2">XaNNI	First human papillomavirus vaccination
+							</li>
+                        <li class="bullets2">Xaeev	First inactivated seasonal influenza vaccination given by pharmacist
+							</li>
+                        <li class="bullets2">Xaeet	First intranasal seasonal influenza vaccination given by pharmacist
+							</li>
+                        <li class="bullets2">XaKMw	First low dose diphtheria, tetanus and inactivated polio vaccination
+							</li>
+                        <li class="bullets2">XacJs	First meningitis B vaccination
+							</li>
+                        <li class="bullets2">XaF1x	First meningitis C vaccination
+							</li>
+                        <li class="bullets2">Xaeec	First MMR (measles mumps and rubella) vaccination
+							</li>
+                        <li class="bullets2">XaLNG	First pandemic influenza vaccination
+							</li>
+                        <li class="bullets2">6551	First pertussis vaccination
+							</li>
+                        <li class="bullets2">XaLqs	First pneumococcal conjugated vaccination
+							</li>
+                        <li class="bullets2">6581	First polio vaccination
+							</li>
+                        <li class="bullets2">65D1	First rabies vaccination
+							</li>
+                        <li class="bullets2">Xaa9n	First rotavirus vaccination
+							</li>
+                        <li class="bullets2">6592	First smallpox vaccination - unsuccessful
+							</li>
+                        <li class="bullets2">XaIrD	First tetanus and low dose diphtheria vaccination
+							</li>
+                        <li class="bullets2">6561	First tetanus vaccination
+							</li>
+                        <li class="bullets2">XaXnn	First tick-borne encephalitis vaccination
+							</li>
+                        <li class="bullets2">6521	First typhoid vaccination
+							</li>
+                        <li class="bullets2">XaMz5	First varicella vaccination
+</li>
+                        <li class="bullets2">XaMz5	First varicella vaccination
+							</li>
+                        <li class="bullets2">XaEKG	Fourth DTP polio and Hib vaccination
+							</li>
+                        <li class="bullets2">Xaa4Y	Fourth hepatitis B junior vaccination
+							</li>
+                        <li class="bullets2">65F6	Fourth hepatitis B vaccination
+							</li>
+                        <li class="bullets2">XacJv	Fourth meningitis B vaccination
+							</li>
+                        <li class="bullets2">Xaakk	Fourth rabies vaccination
+							</li>
+                        <li class="bullets2">XaMKL	Haemophilus influenzae type B and meningitis C vaccination
+							</li>
+                        <li class="bullets2">XaavB	Haemophilus influenzae type b and meningitis C vaccination contraindicated
+							</li>
+                        <li class="bullets2">Xabyy	Haemophilus influenzae type b vaccination contraindicated
+							</li>
+                        <li class="bullets2">9OX2	Has influenza vaccination at surgery
+							</li>
+                        <li class="bullets2">XaEc8	Hepatitis A and typhoid vaccination
+							</li>
+                        <li class="bullets2">XaXPW	Hepatitis B vaccination not indicated
+							</li>
+                        <li class="bullets2">XaZsM	Herpes zoster vaccination
+							</li>
+                        <li class="bullets2">XaQk3	History of bacillus calmette-guerin vaccination
+							</li>
+                        <li class="bullets2">XaN0i	History of hepatitis B vaccination
+							</li>
+                        <li class="bullets2">XaQdj	History of influenza vaccination
+							</li>
+                        <li class="bullets2">XaQe5	History of measles, mumps and rubella vaccination
+							</li>
+                        <li class="bullets2">XaN0g	History of one hepatitis B vaccination
+							</li>
+                        <li class="bullets2">XaQdk	History of pneumococcal vaccination
+							</li>
+                        <li class="bullets2">XaN20	History of three hepatitis B vaccinations
+							</li>
+                        <li class="bullets2">XaN0h	History of two hepatitis B vaccinations
+							</li>
+                        <li class="bullets2">XaN0f	History of vaccination
+							</li>
+                        <li class="bullets2">XaQgS	History of varicella vaccination
+							</li>
+                        <li class="bullets2">XaNQd	Human papillomavirus vaccination
+</li>
+                        <li class="bullets2">65E	Influenza vaccination
+</li>
+                        <li class="bullets2">XaIOT	Influenza vaccination contraindicated
+</li>
+                        <li class="bullets2">XaJ5n	Influenza vaccination not indicated
+							</li>
+                        <li class="bullets2">XaXsK	Influenza vaccination requested
+							</li>
+                        <li class="bullets2">XaK2d	Influenza vaccination telephone invite
+							</li>
+                        <li class="bullets2">6545	Low dose diphtheria vaccination
+							</li>
+                        <li class="bullets2">XaK4x	Low dose diphtheria, tetanus and inactivated polio vaccination
+							</li>
+                        <li class="bullets2">XaK4w	Low dose diphtheria, tetanus, five component acellular pertussis and inactivated polio vaccination
+</li>
+                        <li class="bullets2">65MA	Measles mumps and rubella booster vaccination
+							</li>
+                        <li class="bullets2">65MC	Measles mumps and rubella vaccination - second dose
+							</li>
+                        <li class="bullets2">XaQPr	Measles mumps rubella catch-up vaccination
+							</li>
+                        <li class="bullets2">65A	Measles vaccination
+							</li>
+                        <li class="bullets2">XaVy4	Measle vaccination requested
+							</li>
+                        <li class="bullets2">65M1	Measles/mumps/rubella vaccination
+</li>
+                        <li class="bullets2">65M2	Measles/rubella vaccination
+</li>
+                        <li class="bullets2">XaF20	Meningitis A  C vaccination
+</li>
+                        <li class="bullets2">XacJx	Meningitis B vaccination contraindicated
+	</li>
+                        <li class="bullets2">6571	Meningitis vaccination
+							</li>
+                        <li class="bullets2">65MB	MMR pre-school booster vaccination
+							</li>
+                        <li class="bullets2">XaCFh	MMR vaccination status
+	</li>
+                        <li class="bullets2">65F5	Mumps vaccination
+							</li>
+                        <li class="bullets2">XaQhm	PANDEMRIX - first influenza A (H1N1v) 2009 vaccination given
+							</li>
+                        <li class="bullets2">XaQhn	PANDEMRIX - second influenza A (H1N1v) 2009 vaccination given
+</li>
+                        <li class="bullets2">Xa7Oi	Pertussis booster vaccination
+</li>
+                        <li class="bullets2">655	Pertussis vaccination
+</li>
+                        <li class="bullets2">XacJ3	Pertussis vaccination in pregnancy
+							</li>
+                        <li class="bullets2">6573	Plague vaccination
+							</li>
+                        <li class="bullets2">6572	Pneumococcal vaccination
+</li>
+                        <li class="bullets2">XaIOS	Pneumococcal vaccination contraindicated
+</li>
+                        <li class="bullets2">XaCKa	Pneumococcal vaccination given
+</li>
+                        <li class="bullets2">XaKFY	Pneumococcal vaccination not indicated
+							</li>
+                        <li class="bullets2">XaObE	Pneumococcal vaccination verbal invite
+							</li>
+                        <li class="bullets2">658	Polio vaccination
+							</li>
+                        <li class="bullets2">658Z	Polio vaccination NOS
+</li>
+                        <li class="bullets2">XaZVN	Post exposure diphtheria, tetanus, acellular pertussis and inactivated polio vaccination
+		</li>
+                        <li class="bullets2">F034C	Post measles vaccination encephalitis
+							</li>
+                        <li class="bullets2">Xa1cN	Pre-school diphtheria and tetanus double and polio vaccination
+</li>
+                        <li class="bullets2">XaXjc	Quadrivalent human papillomavirus vaccination
+		</li>
+                        <li class="bullets2">XaKYF	Rabies booster vaccination
+</li>
+                        <li class="bullets2">65D	Rabies vaccination
+							</li>
+                        <li class="bullets2">65DZ	Rabies vaccination NOS
+</li>
+                        <li class="bullets2">XaQxb	Recombinant meningococcal group B and outer membrane vesicle vaccination
+							</li>
+                        <li class="bullets2">XaNwr	Rotavirus vaccination
+</li>
+                        <li class="bullets2">Xaa9q	Rotavirus vaccination contraindicated
+</li>
+                        <li class="bullets2">65B	Rubella vaccination
+							</li>
+                        <li class="bullets2">XaZ0d	Seasonal influenza vaccination
+							</li>
+                        <li class="bullets2">XaZ0j	Seasonal influenza vaccination contraindicated
+</li>
+                        <li class="bullets2">XaZfY	Seasonal influenza vaccination given by pharmacist
+							</li>
+                        <li class="bullets2">XaaZp	Seasonal influenza vaccination given while hospital inpatient
+	</li>
+                        <li class="bullets2">XaZ0k	Seasonal influenza vaccination not indicated
+	</li>
+                        <li class="bullets2">6576	Second anthrax vaccination
+</li>
+                        <li class="bullets2">XaKN0	Second booster low dose diphtheria, tetanus and inactivated polio vaccination
+							</li>
+                        <li class="bullets2">6512	Second cholera vaccination
+						</li>
+                        <li class="bullets2">65ME	Second combined hepatitis A and B vaccination
+</li>
+                        <li class="bullets2">Xaa4b	Second combined paediatric hepatitis A and B vaccination
+</li>
+                        <li class="bullets2">65J2	Second diphtheria and tetanus double vaccination
+							</li>
+                        <li class="bullets2">XaK4u	Second diphtheria tetanus and five component acellular pertussis, haemophilus influenzae type b, inactivated polio vaccination
+							</li>
+                        <li class="bullets2">6542	Second diphtheria vaccination
+							</li>
+                        <li class="bullets2">65I2	Second diphtheria, pertussis and tetanus triple and polio vaccination
+</li>
+                        <li class="bullets2">65H2	Second diphtheria, pertussis and tetanus triple vaccination
+							</li>
+                        <li class="bullets2">XaJkz	Second diphtheria, tetanus and acellular pertussis (DTaP) vaccination
+							</li>
+                        <li class="bullets2">XagJI	Second diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination
+							</li>
+                        <li class="bullets2">XaJo8	Second diphtheria, tetanus, acellular pertussis (DTaP) and polio vaccination
+							</li>
+                        <li class="bullets2">XaCEQ	Second DTP polio and Hib vaccination
+							</li>
+                        <li class="bullets2">657B	Second haemophilus B vaccination
+							</li>
+                        <li class="bullets2">XaXJJ	Second Haemophilus influenzae type B and meningitis C vaccination
+							</li>
+                        <li class="bullets2">XaEcA	Second hepatitis A and typhoid vaccination
+							</li>
+                        <li class="bullets2">XaEFI	Second hepatitis A junior vaccination
+							</li>
+                        <li class="bullets2">65FB	Second hepatitis A vaccination
+							</li>
+                        <li class="bullets2">Xaa4W	Second hepatitis B junior vaccination
+							</li>
+                        <li class="bullets2">65F2	Second hepatitis B vaccination
+							</li>
+                        <li class="bullets2">XaNNJ	Second human papillomavirus vaccination
+							</li>
+                        <li class="bullets2">Xaeew	Second inactivated seasonal influenza vaccination given by pharmacist
+							</li>
+                        <li class="bullets2">XaKMx	Second low dose diphtheria, tetanus and inactivated polio vaccination
+							</li>
+                        <li class="bullets2">XacJt	Second meningitis B vaccination
+</li>
+                        <li class="bullets2">XaF1y	Second meningitis C vaccination
+</li>
+                        <li class="bullets2">XaLNH	Second pandemic influenza vaccination
+							</li>
+                        <li class="bullets2">6552	Second pertussis vaccination
+</li>
+                        <li class="bullets2">XaLqt	Second pneumococcal conjugated vaccination
+							</li>
+                        <li class="bullets2">6582	Second polio vaccination
+		</li>
+                        <li class="bullets2">65D2	Second rabies vaccination
+	</li>
+                        <li class="bullets2">Xaa9o	Second rotavirus vaccination
+	</li>
+                        <li class="bullets2">XaIrE	Second tetanus and low dose diphtheria vaccination
+	</li>
+                        <li class="bullets2">6562	Second tetanus vaccination
+</li>
+                        <li class="bullets2">XaXno	Second tick-borne encephalitis vaccination
+							</li>
+                        <li class="bullets2">6522	Second typhoid vaccination
+</li>
+                        <li class="bullets2">XaMzA	Second varicella vaccination
+</li>
+                        <li class="bullets2">XaIsO	Single dose typhoid vaccination
+							</li>
+                        <li class="bullets2">XaF4P	Single meningitis C vaccination
+</li>
+                        <li class="bullets2">65GZ	Single vaccination NOS
+							</li>
+                        <li class="bullets2">XaYvC	Supplemental pneumococcal conjugated vaccination
+							</li>
+                        <li class="bullets2">65J5	Tetanus and low dose diphtheria double vaccination
+</li>
+                        <li class="bullets2">XE1Sj	Tetanus and polio vaccination
+	</li>
+                        <li class="bullets2">656	Tetanus vaccination
+							</li>
+                        <li class="bullets2">656Z	Tetanus vaccination NOS
+		</li>
+                        <li class="bullets2">65MF	Third combined hepatitis A and B vaccination
+	</li>
+                        <li class="bullets2">Xaa4c	Third combined paediatric hepatitis A and B vaccination
+	</li>
+                        <li class="bullets2">65J3	Third diphtheria and tetanus double vaccination
+							</li>
+                        <li class="bullets2">XaK4v	Third diphtheria tetanus and five component acellular pertussis, haemophilus influenzae type b, inactivated polio vaccination
+</li>
+                        <li class="bullets2">6543	Third diphtheria vaccination
+</li>
+                        <li class="bullets2">65I3	Third diphtheria, pertussis and tetanus triple and polio vaccination
+</li>
+                        <li class="bullets2">65H3	Third diphtheria, pertussis and tetanus triple vaccination
+	</li>
+                        <li class="bullets2">XaJl0	Third diphtheria, tetanus and acellular pertussis (DTaP) vaccination
+	</li>
+                        
+						<li class="bullets2">XagJJ	Third diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination
+							</li>
+                        <li class="bullets2">XaJo9	Third diphtheria, tetanus, acellular pertussis (DTaP) and polio vaccination
+</li>
+                        <li class="bullets2">XaCER	Third DTP polio and Hib vaccination
+			</li>
+                        <li class="bullets2">657C	Third haemophilus B vaccination
+						</li>
+                        <li class="bullets2">XaJhy	Third hepatitis A junior vaccination
+</li>
+                        <li class="bullets2">65FC	Third hepatitis A vaccination
+							</li>
+                        <li class="bullets2">Xaa4X	Third hepatitis B junior vaccination
+</li>
+                        <li class="bullets2">65F3	Third hepatitis B vaccination
+							</li>
+                        <li class="bullets2">XaNNK	Third human papillomavirus vaccination
+</li>
+                        <li class="bullets2">XaKMy	Third low dose diphtheria, tetanus and inactivated polio vaccination
+</li>
+                        <li class="bullets2">XacJu	Third meningitis B vaccination
+</li>
+                        <li class="bullets2">XaF1z	Third meningitis C vaccination
+</li>
+                        <li class="bullets2">6553	Third pertussis vaccination
+</li>
+                        <li class="bullets2">XaLqu	Third pneumococcal conjugated vaccination
+							</li>
+                        <li class="bullets2">6583	Third polio vaccination
+	</li>
+                        <li class="bullets2">65D3	Third rabies vaccination
+</li>
+                        <li class="bullets2">XaIrF	Third tetanus and low dose diphtheria vaccination
+</li>
+                        <li class="bullets2">6563	Third tetanus vaccination
+</li>
+                        <li class="bullets2">XaXnp	Third tick-borne encephalitis vaccination
+							</li>
+                        <li class="bullets2">6700	Travel vaccination given
+		</li>
+                        <li class="bullets2">Xa1po	Travel vaccinations
+</li>
+                        <li class="bullets2">653	Tuberculosis (BCG) vaccination
+</li>
+                        <li class="bullets2">6574	Tularaemia vaccination
+</li>
+                        <li class="bullets2">XaBbI	Typhoid vaccination
+</li>
+                        <li class="bullets2">652Z	Typhoid vaccination NOS
+</li>
+                        <li class="bullets2">XaJov	Varicella vaccination
+						</li>
+                    </ul>
+                </MadCap:expandingBody>
+            </MadCap:expanding>
+        </div>
+        <div>
+            <MadCap:expanding>
+                <MadCap:expandingHead><span class="bullet">Feeding codes: </span>
+                </MadCap:expandingHead>
+                <MadCap:expandingBody>
+                    <ul>
+                        <li class="bullets2">6422 Breast fed at 6 weeks</li>
+                        <li class="bullets2">64236423 Breast and supplement fed at 6 weeks</li>
+                        <li class="bullets2">62P162P1 Breast fed</li>
+                        <li class="bullets2">62P1-162P1 Breast fed</li>
+                        <li class="bullets2">62P262P2 Bottle fed</li>
+                        <li class="bullets2">62P362P3 Breast-feeding with supplement</li>
+                        <li class="bullets2">62P462P4 Breast changed to bottle feed</li>
+                        <li class="bullets2">62PB62PB Bottle changed to breast</li>
+                        <li class="bullets2">XaJgnXaJgn Breast fed at birth</li>
+                        <li class="bullets2">6.40E+02XaJgn Breast fed at birth</li>
+                        <li class="bullets2">XaPO0XaPO0 Breastfeeding at discharge fromhospital</li>
+                        <li class="bullets2">62PEXaPO0 Breastfeeding at discharge from hospital</li>
+                        <li class="bullets2">62P30XaPO8 Breastfeeding and supplementary bottle feeding at discharge from hospital</li>
+                        <li class="bullets2">XaPO8XaPO8 Breastfeeding and supplementary bottle feeding at discharge from hospital</li>
+                    </ul>
+                </MadCap:expandingBody>
+            </MadCap:expanding>
+        </div>
+        <h2>Data state</h2>
+        <p>Patient identifiable.</p>
+        <p><a href="Use cases.htm">Back to Use cases</a>
         </p>
     </body>
 </html>
