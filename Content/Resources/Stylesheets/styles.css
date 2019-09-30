@@ -383,10 +383,19 @@ tr:nth-child(even)
 	background-color: #f2f2f2;
 }
 
+th a
+{
+	padding: 15px;
+	background-color: #4678A1;
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 th
 {
 	padding: 15px;
-	text-align: center;
+	text-align: left;
 	background-color: #4678A1;
 	color: white;
 }
@@ -394,7 +403,7 @@ th
 td
 {
 	padding: 15px;
-	text-align: center;
+	text-align: left;
 }
 
 td:first-child
@@ -402,6 +411,17 @@ td:first-child
 	padding: 15px;
 	text-align: left;
 	font-weight: bold;
+}
+
+table.sortable
+{	
+}
+
+table {
+  max-width: 100%; 
+}
+table td {
+  word-break: break-all;
 }
 
 a
@@ -687,6 +707,14 @@ th.rotate > div
 }
 
 /* Clear floats after the columns */
+
+.column5
+{
+	float: left;
+	width: 20%;
+	padding: 30px;
+	/* Should be removed. Only for demonstration */
+}
 
 .row:after
 {
