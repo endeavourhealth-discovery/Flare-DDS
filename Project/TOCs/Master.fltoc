@@ -26,6 +26,9 @@
     Title="[%=System.LinkedTitle%]"
     Link="/Content/draft use case table.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Regional programmes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  <TocEntry
     Title="Partners"
     Link="/Content/Partners.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   <TocEntry

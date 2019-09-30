@@ -421,7 +421,7 @@ table {
   max-width: 100%; 
 }
 table td {
-  word-break: break-all;
+  word-break: normal;
 }
 
 a
