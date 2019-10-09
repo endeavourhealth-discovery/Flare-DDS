@@ -1,34 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultToc
-  Version="1">
-  <TocEntry
-    Title="Home"
-    Link="/Content/Home.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
-    StartSection="false"
-    SectionNumberReset="continue"
-    VolumeNumberReset="same"
-    ChapterNumberReset="continue"
-    ComputeToc="false"
-    ReplaceMergeNode="false"></TocEntry>
-  <TocEntry
-    Title="Overview"
-    Link="/Content/Overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-  <TocEntry
-    Title="Governance"
-    Link="/Content/Governance.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-  <TocEntry
-    Title="Technical"
-    Link="/Content/Technical.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-  <TocEntry
-    Title="[%=System.LinkedTitle%]"
-    Link="/Content/Regional programmes/Regional programmes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-  <TocEntry
-    Title="[%=System.LinkedTitle%]"
-    Link="/Content/Use cases.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-  <TocEntry
-    Title="Partners"
-    Link="/Content/Partners/Partners.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-  <TocEntry
-    Title="Contact"
-    Link="/Content/Contact.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+<CatapultToc Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <TocEntry Title="Home" Link="/Content/Home.htm" StartSection="false" SectionNumberReset="continue" VolumeNumberReset="same" ChapterNumberReset="continue" ComputeToc="false" ReplaceMergeNode="false" />
+    <TocEntry Title="Overview" Link="/Content/Overview.htm" />
+    <TocEntry Title="Governance" Link="/Content/Governance.htm" />
+    <TocEntry Title="Technical" Link="/Content/Technical.htm" />
+    <TocEntry Link="/Content/Regional programmes/Regional programmes.htm" Title="[%=System.LinkedTitle%]" />
+    <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/draft use case table.htm" />
+    <TocEntry Title="Partners" Link="/Content/Partners/Partners.htm" />
+    <TocEntry Title="Contact" Link="/Content/Contact.htm" />
 </CatapultToc>
