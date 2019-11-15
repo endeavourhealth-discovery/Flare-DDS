@@ -23,6 +23,9 @@
     GenerateGlossaryProxy="true" />
   <Destinations>
     <Destination
+      Link="/Project/Destinations/FTP(Test).fldes"
+      Publish="true" />
+    <Destination
       Link="/Project/Destinations/GIT(live).fldes"
       Publish="true" />
   </Destinations>
