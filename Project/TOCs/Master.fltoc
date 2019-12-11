@@ -21,10 +21,46 @@
     Link="/Content/Technical.htm" />
   <TocEntry
     Link="/Content/Regional programmes/Regional programmes.htm"
-    Title="[%=System.LinkedTitle%]" />
+    Title="[%=System.LinkedTitle%]">
+    <TocEntry
+      Title="Discovery East London"
+      Link="/Content/Regional programmes/Discovery East London/Discovery East London.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Regional programmes/Discovery East London/Discovery East London news.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+  </TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/Use cases.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    Link="/Content/Use cases.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Live_use_cases/Barts_Pancreas_Tissue_Bank_(BPTB).htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Live_use_cases/Childhood immunisations (BHR).htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Live_use_cases/Childhood immunisations and six week check.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Live_use_cases/Diabetes retinopathy recall.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Live_use_cases/Genes and health.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Live_use_cases/Health checks (BHR).htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Live_use_cases/NHS 111 Discovery frailty flagging.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Live_use_cases/Serious Mental Illness data reconciliation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Live_use_cases/WSDP.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
   <TocEntry
     Title="Partners"
     Link="/Content/Partners/Partners.htm" />

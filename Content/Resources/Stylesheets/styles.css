@@ -15,16 +15,17 @@ a.MCBreadcrumbsLink
 {
 	font-style: italic;
 	text-decoration: underline;
+	color: #4678a1;
 }
 
 a.MCBreadcrumbsLink:visited
 {
-	color: #000000;
+	
 }
 
 a.MCBreadcrumbsLink:hover
 {
-	color: #BED230;
+	color: #000000;
 }
 
 div.TopicContent
@@ -271,6 +272,8 @@ MadCap|breadcrumbsProxy
 	mc-breadcrumbs-prefix: 'You are here: ';
 	margin-bottom: -30px;
 	padding-bottom: 0px;
+	mc-breadcrumbs-count: 10;
+	color: #4678a1;
 }
 
 MadCap|xref
