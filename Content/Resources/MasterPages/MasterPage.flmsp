@@ -21,16 +21,19 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
     </head>
-    <body class="with-footer">
-        <div class="page_toc" id="page-toc">
-            <MadCap:searchBarProxy />
-            <p class="boxHeading">Latest DDS news:</p>
-            <!-- page table of contents generated here -->
-        </div>
-        <MadCap:bodyProxy />
+    	
+		
+		
+		<body class="with-footer">
+		<MadCap:breadcrumbsProxy/>
+		<div style= " position: relative; position: right; float: right; width: 30%; margin-bottom: 20px" >
+			<MadCap:searchBarProxy/>
+		</div>        	
+      
+		<MadCap:bodyProxy />
         <MadCap:miniTocProxy />
         <MadCap:topicToolbarProxy class="" style="mc-topic-toolbar-items: ;" />
-    </body>
+    	</body>
     <div class="footer">2019 © | Discovery Health and Care Data Service | CIC
 Company No. 11952385 | Available under Apache 2.0 open source | Powered by LHS Ltd<br /></div>
 </html>

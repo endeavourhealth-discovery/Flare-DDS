@@ -269,6 +269,8 @@ MadCap|breadcrumbsProxy
 	font-size: .7em;
 	font-style: italic;
 	mc-breadcrumbs-prefix: 'You are here: ';
+	margin-bottom: -30px;
+	padding-bottom: 0px;
 }
 
 MadCap|xref
@@ -414,14 +416,18 @@ td:first-child
 }
 
 table.sortable
-{	
+{
+	
 }
 
-table {
-  max-width: 100%; 
+table
+{
+	max-width: 100%;
 }
-table td {
-  word-break: normal;
+
+table td
+{
+	word-break: normal;
 }
 
 a
@@ -447,24 +453,25 @@ MadCap|glossaryTerm
 
 MadCap|glossaryProxy
 {
-	width: 500px;
-	height: 100px;
 	margin: 10px;
 	padding: 10px;
 	display: block;
 	color: #ff0000;
+	height: auto;
+	width: auto;
 }
 
 MadCap|glossaryTerm.Popup
 {
 	overflow: auto;
+	height: auto;
+	width: auto;
 }
 
 MadCap|popupBody
 {
 	z-index: -1;
 	padding: 10px;
-	margin-left: 10px;
 	color: #ffffff;
 	background-color: #3a759f;
 	display: block;
@@ -473,14 +480,14 @@ MadCap|popupBody
 	white-space: nowrap;
 	word-spacing: normal;
 	text-align: center;
-	width: 400px;
+	width: auto;
 }
 
 MadCap|popup:hover
 {
 	width: 100px;
 	padding: 5px;
-	margin: 5px;
+	margin: 50px;
 }
 
 MadCap|popup:focus
@@ -502,6 +509,18 @@ MadCap|expanding
 {
 	mc-closed-image: url('../Images/DropDownClosed.png');
 	mc-open-image: url('../Images/DropDownOpen.png');
+}
+
+MadCap|glossaryTerm.Hyperlink
+{
+	height: auto;
+	width: auto;
+}
+
+MadCap|glossaryTerm.Expanding
+{
+	width: auto;
+	height: auto;
 }
 
 @media only screen and (min-width: 1024px)
@@ -560,8 +579,8 @@ a.Popup
 .headline
 {
 	text-align: center;
-	font-size: 18pt;
-	margin-top: 40px;
+	font-size: 22pt;
+	margin-top: 70px;
 }
 
 .ddsblue

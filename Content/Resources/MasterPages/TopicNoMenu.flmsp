@@ -25,6 +25,8 @@
         </script>
     </head>
     <body class="with-footer">
+		<MadCap:breadcrumbsProxy/>
+
         <MadCap:bodyProxy />
         <MadCap:topicToolbarProxy class="" style="mc-topic-toolbar-items: ;" />
     </body>

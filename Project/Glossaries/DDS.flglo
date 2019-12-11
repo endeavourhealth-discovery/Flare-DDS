@@ -1,22 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultGlossary>
   <GlossaryEntry
-    glossTerm="DDS.Term0">
+    glossTerm="DDS.Term0"
+    Stem=""
+    IgnoreCase="false">
     <Terms>
-      <Term>My Term</Term>
+      <Term>CDS</Term>
     </Terms>
-    <Definition>My definition</Definition>
+    <Definition
+      Link="">Commissioning Data Sets</Definition>
   </GlossaryEntry>
   <GlossaryEntry
     glossTerm="DDS.Term3"
     Stem=""
     IgnoreCase="false"
-    TermClass="Popup">
+    TermClass="Hyperlink">
     <Terms>
       <Term>ODS</Term>
     </Terms>
     <Definition
       Link="">Organisation 
 Data Service (NHS)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="DDS.Term1"
+    TermClass="Hyperlink"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>CDE</Term>
+    </Terms>
+    <Definition
+      Link="">Commissioning Data Extracts from Power Insight (Millennium data warehouse software)</Definition>
   </GlossaryEntry>
 </CatapultGlossary>
