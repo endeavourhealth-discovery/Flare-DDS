@@ -1,6 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-    <head> <style>nav.tab-bar {display:none;}</style><style>div.outer-row {max-width: 100% !important;}</style><link href="../Stylesheets/styles.css" rel="stylesheet" type="text/css" /></head>
+    <head>
+        <style>nav.tab-bar {display:none;}</style>
+        <style>div.outer-row {max-width: 100% !important;}</style>
+        <link href="../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../Scripts/common.js">
+        </script>
+        <script type="text/javascript" src="../Scripts/css.js">
+        </script>
+        <script type="text/javascript" src="../Scripts/standardista-table-sorting.js">
+        </script>
+    </head>
     <body>
         <div class="dds_popup">
             <MadCap:bodyProxy />

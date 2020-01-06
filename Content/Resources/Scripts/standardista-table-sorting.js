@@ -1,4 +1,4 @@
-ï»¿/**
+/**
  * Written by Neil Crosby. 
  * http://www.workingwith.me.uk/articles/scripting/standardista_table_sorting
  *
@@ -8,31 +8,10 @@
  * have been possible without Stuart's earlier outstanding work.
  *
  * Use this wherever you want, but please keep this comment at the top of this file.
- *
- * Copyright (c) 2006 Neil Crosby
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy 
- * of this software and associated documentation files (the "Software"), to deal 
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
- * copies of the Software, and to permit persons to whom the Software is 
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in 
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
- * SOFTWARE.
  **/
 var standardistaTableSorting = {
 
 	that: false,
-	isOdd: false,
 
 	sortColumnIndex : -1,
 	lastAssignedId : 0,
@@ -91,17 +70,14 @@ var standardistaTableSorting = {
 		
 		for (var i=0; i < row.cells.length; i++) {
 		
-			// create a link with an onClick event which will 
-			// control the sorting of the table
+			// create a link with an onClick event which will control the sorting of the table
 			var linkEl = createElement('a');
-
 			linkEl.href = '#';
 			linkEl.onclick = this.headingClicked;
 			linkEl.setAttribute('columnId', i);
-			linkEl.title = 'Click to sort';
 			
-			// move the current contents of the cell that we're 
-			// hyperlinking into the hyperlink
+			// move the current contents of the cell that we're hyperlinking
+			// into the hyperlink
 			var innerEls = row.cells[i].childNodes;
 			for (var j = 0; j < innerEls.length; j++) {
 				linkEl.appendChild(innerEls[j]);
@@ -117,15 +93,6 @@ var standardistaTableSorting = {
 
 		}
 	
-		if (css.elementHasClass(table, 'autostripe')) {
-			this.isOdd = false;
-			var rows = table.tBodies[0].rows;
-		
-			// We appendChild rows that already exist to the tbody, so it moves them rather than creating new ones
-			for (var i=0;i<rows.length;i++) { 
-				this.doStripe(rows[i]);
-			}
-		}
 	},
 	
 	headingClicked: function(e) {
@@ -273,7 +240,7 @@ var standardistaTableSorting = {
 		if (itm.match(/^\d\d[\/-]\d\d[\/-]\d\d$/)) {
 			sortfn = this.sortDate;
 		}
-		if (itm.match(/^[ï¿½$]/)) {
+		if (itm.match(/^[£$]/)) {
 			sortfn = this.sortCurrency;
 		}
 		if (itm.match(/^\d?\.?\d+$/)) {
@@ -398,26 +365,21 @@ var standardistaTableSorting = {
 	},
 
 	moveRows : function(table, newRows) {
-		this.isOdd = false;
+		var odd = false;
 
 		// We appendChild rows that already exist to the tbody, so it moves them rather than creating new ones
 		for (var i=0;i<newRows.length;i++) { 
 			var rowItem = newRows[i];
 
-			this.doStripe(rowItem);
+			if(odd) {
+				css.addClassToElement(rowItem, 'odd');
+			} else {
+				css.removeClassFromElement(rowItem, 'odd');
+			}
+			odd = !odd;
 
 			table.tBodies[0].appendChild(rowItem); 
 		}
-	},
-	
-	doStripe : function(rowItem) {
-		if (this.isOdd) {
-			css.addClassToElement(rowItem, 'odd');
-		} else {
-			css.removeClassFromElement(rowItem, 'odd');
-		}
-		
-		this.isOdd = !this.isOdd;
 	}
 
 }

@@ -22,7 +22,12 @@
         <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" type="text/css" />
         <link href="../Stylesheets/nomenu.css" rel="stylesheet" type="text/css" />
         <link href="../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
-    </head>
+    
+		<script type="text/javascript" src="../Scripts/common.js"></script>
+		<script type="text/javascript" src="../Scripts/css.js"></script>
+		<script type="text/javascript" src="../Scripts/standardista-table-sorting.js"></script>
+   
+	</head>
     <body class="with-footer">
         <div class="NewRowClass2" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
             <div>

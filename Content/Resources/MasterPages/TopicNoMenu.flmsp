@@ -23,6 +23,10 @@
         <link href="../Stylesheets/nomenu.css" rel="stylesheet" type="text/css" />
         <script src="https://kit.fontawesome.com/dc50f3ffb3.js">
         </script>
+		<script type="text/javascript" src="../Scripts/common.js"></script>
+		<script type="text/javascript" src="../Scripts/css.js"></script>
+		<script type="text/javascript" src="../Scripts/standardista-table-sorting.js"></script>
+    
     </head>
     <body class="with-footer">
         <MadCap:breadcrumbsProxy />
