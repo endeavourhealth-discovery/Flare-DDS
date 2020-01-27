@@ -30,8 +30,6 @@
           <Property
             Name="BackgroundColor">#f5f5f5</Property>
           <Property
-            Name="Display">block</Property>
-          <Property
             Name="MaxWidth">100%</Property>
           <Property
             Name="PaddingLeft">3%</Property>
