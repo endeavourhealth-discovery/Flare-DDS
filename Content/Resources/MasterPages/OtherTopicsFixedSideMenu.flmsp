@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title></title>
+        <link href="../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <link href="../Hover maps/hovermapCore.css" rel="stylesheet" type="text/css" />
+        <link href="../Hover maps/hovermapHotspots.css" rel="stylesheet" type="text/css" />
+        <link href="../Stylesheets/flexboxgrid.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Stylesheets/nomenu.css" rel="stylesheet" type="text/css" />
+    </head>
+	
+    <body>
+       <MadCap:breadcrumbsProxy /> 
+        <div>
+            <div id="contentBody">
+                <div class="ContentRow" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                    <div class="numbered" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="left: 6px;top: -16px;">
+                        <MadCap:menuProxy style="mc-toc-depth: -1;mc-context-sensitive: True;mc-include-parent: True;mc-include-siblings: True;mc-include-children: True;" data-mc-skin="/Project/Skins/SideMenuFixed.flskn" mc-linked-toc="$topicHeadings" />
+                    </div>
+                    <div xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                        <MadCap:bodyProxy class="sideContent" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
