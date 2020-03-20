@@ -4,7 +4,7 @@
   Comment="MadCap HTML5 Target"
   Type="WebHelp2"
   Destinations=""
-  GlossaryTermConversion="all"
+  GlossaryTermConversion="first"
   MoveOutputContentToRoot="false"
   SkinComponents=""
   EnableResponsiveOutput="true"
@@ -23,10 +23,11 @@
     GenerateGlossaryProxy="true" />
   <Destinations>
     <Destination
-      Link="/Project/Destinations/FTP(Test).fldes"
-      Publish="true" />
-    <Destination
       Link="/Project/Destinations/GIT(live).fldes"
       Publish="true" />
   </Destinations>
+  <Glossaries>
+    <Glossary
+      Link="/Project/Glossaries/DDS.flglo" />
+  </Glossaries>
 </CatapultTarget>

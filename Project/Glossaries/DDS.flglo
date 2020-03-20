@@ -3,7 +3,8 @@
   <GlossaryEntry
     glossTerm="DDS.Term0"
     Stem=""
-    IgnoreCase="false">
+    IgnoreCase="false"
+    TermClass="Popup">
     <Terms>
       <Term>CDS</Term>
     </Terms>
@@ -14,7 +15,7 @@
     glossTerm="DDS.Term3"
     Stem=""
     IgnoreCase="false"
-    TermClass="Hyperlink">
+    TermClass="Popup">
     <Terms>
       <Term>ODS</Term>
     </Terms>
@@ -24,7 +25,7 @@ Data Service (NHS)</Definition>
   </GlossaryEntry>
   <GlossaryEntry
     glossTerm="DDS.Term1"
-    TermClass="Hyperlink"
+    TermClass="Popup"
     Stem=""
     IgnoreCase="false">
     <Terms>
@@ -32,5 +33,38 @@ Data Service (NHS)</Definition>
     </Terms>
     <Definition
       Link="">Commissioning Data Extracts from Power Insight (Millennium data warehouse software)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="DDS.Term2"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>HSCN</Term>
+    </Terms>
+    <Definition
+      Link="">Health and Social Care Network</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="DDS.Term4"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>SFTP</Term>
+    </Terms>
+    <Definition
+      Link="">Secure File Transfer Protocol</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="DDS.Term5"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>AWS</Term>
+    </Terms>
+    <Definition
+      Link="">Amazon Web Services</Definition>
   </GlossaryEntry>
 </CatapultGlossary>

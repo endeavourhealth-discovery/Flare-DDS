@@ -21,6 +21,8 @@
         <ul>
             <li class="bullets"><a href="#Architec">Architecture</a>
             </li>
+            <li class="bullets"><a href="#Publish">Secure publication to the DDS</a>
+            </li>
             <li class="bullets"><a href="#Componen">Components</a>
             </li>
             <li class="bullets"><a href="#APIs">APIs</a>
@@ -41,12 +43,36 @@
         <p>
             <img src="Resources/Images/software architecture.png" style="mc-float: frame-center;max-width: 90%;min-width: auto;min-height: auto;width: auto;height: auto;" />
         </p>
-        <p>Publisher data is identified by:</p>
-        <ul>
-            <li class="bullets">Organisation - it is assumed that published data will be accompanied by an ODS code , or similar.</li>
-            <li class="bullets">Software format and version - for example, EMIS CSV 5.6 or Adastra XLM 1.0.</li>
-        </ul>
+        <p>Publisher data is identified by organisation and software format/version. For example,  EMIS CSV 5.6 or Adastra XLM 1.0.</p>
+        <p><b>Note:</b> It is assumed that published data will be accompanied by an ODS code, or similar.
+           </p>
         <p><b>Important:</b> Existing data processing and sharing agreements are checked to validate that the DDS has permission to process data from that organisation and in that format/version, and then share that data with specified subscribers.</p>
+        <h2><a name="Publish"></a>Secure publication to the DDS</h2>
+        <p>Data is transferred, via HSCN, into the DDS HSCN connected AWS instance in one of the  four following ways:</p>
+        <ul>
+            <li class="bullets"><a href="#SFTP">SFTP Pull</a>
+            </li>
+            <li class="bullets"><a href="#SFTP2">SFTP Push</a>
+            </li>
+            <li class="bullets"><a href="#HTTPS">HTTPS Post</a>
+            </li>
+            <li class="bullets"><a href="#MLLP">MLLP Send</a>
+            </li>
+        </ul>
+        <h3><a name="SFTP"></a>SFTP Pull</h3>
+        <p>GPSoC IM1 pairing directly with the publisher’s system supplier. The data is pulled by the DDS from the suppliers SFTP  and then onto a publisher specific SFTP folder structure in Discovery’s AWS instance over a TLS 1.2 encrypted link. Data from EMIS is pgp encrypted at source.</p>
+        <h3><a name="SFTP2"></a>SFTP Push</h3>
+        <p>The data is pushed from the publisher's SFTP into the DDS and then onto a publisher specific SFTP folder structure in Discovery’s AWS instance over a TLS 1.2 encrypted link.</p>
+        <h3><a name="HTTPS"></a>HTTPS Post</h3>
+        <p>The data is posted to the DDS and the onto a publisher specific SFTP folder structure in Discovery’s AWS instance over a TLS 1.2 encrypted link.</p>
+        <h3><a name="MLLP"></a>MLLP Send</h3>
+        <p>Messages are posted over VPN TLS 1.2 encrypted links into the DDS HL7 receiver and then onto Discovery’s AWS instance.</p>
+        <h3>AWS Security</h3>
+        <p>As a hosting organisation, AWS has in place over 50 security and compliance certifications including ISO 27001, 27017, 27018; PCI DSS; SOC 1/2/3; and Cyber Essentials Plus.</p>
+        <p>The DDS is built on this platform and makes use of multiple enhanced features to secure the data; these include encrypting all networks to at least TLS 1.2 with high strength ciphers, ensuring all data at rest (such as in databases) or data in transit (such processing queues) is encrypted, administrative access is controlled using VPN with 2FA, access controls, and all access to the systems is logged &amp; audited.</p>
+        <p>The system has been designed to exceed the requirements set out in the NHS Data Security Protection Toolkit.</p>
+        <h3>HSCN Certification</h3>
+        <p>The Discovery platform has an HSCN to AWS connection that has been certified. The connection is provided through our IG agreement with Tower Hamlets CCG ODS code 08V.</p>
         <h2><a name="Componen"></a>Components</h2>
         <p>The following diagram illustrates the various logical components that make up the Discovery Data Service:</p>
         <img src="Resources/Images/DDS components.png" usemap="#map1" style="mc-float: frame-center;max-width: 100%;" />
