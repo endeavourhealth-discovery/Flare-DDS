@@ -15,7 +15,9 @@
   GetLatestBeforeCompile="false"
   TabletBreakpoint="1024"
   EnableSitemap="true"
-  SitemapWebUrl="https://www.discoverydataservice.org">
+  SitemapWebUrl="https://www.discoverydataservice.org"
+  PartialWordSearch="true"
+  MakeFileLowerCase="false">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
@@ -23,7 +25,7 @@
     GenerateGlossaryProxy="true" />
   <Destinations>
     <Destination
-      Link="/Project/Destinations/GIT(live).fldes"
+      Link="/Project/Destinations/FTP(Test).fldes"
       Publish="true" />
   </Destinations>
   <Glossaries>

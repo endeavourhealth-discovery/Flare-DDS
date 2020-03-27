@@ -77,7 +77,29 @@
         <p>The following diagram illustrates the various logical components that make up the Discovery Data Service:</p>
         <img src="Resources/Images/DDS components.png" usemap="#map1" style="mc-float: frame-center;max-width: 100%;" />
         <h2><a name="APIs"></a>APIs</h2>
-        <p>Access the following Discovery APIs at:</p>
+        <p>The Discovery test APIs help our industry colleagues to develop new health and social care products and applications by accessing test patient data, from multiple health and social care sources, stored in the Discovery Data Service (DDS).</p>
+        <p>We believe that this will also increase the benefits realised to those publishing to and subscribing from the DDS.</p>
+        <table style="width: 100%;border-spacing: 0px 0px;">
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th>API</th>
+                    <th>Details</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-weight: bold;"><a href="Resources/PDFs/Discovery FHIR Care Connect API (v1-1).pdf" target="_blank">Get structured record</a>
+                    </td>
+                    <td style="text-align: left;">Returns a complete patient record in a structured format following GP and Care Connect standards.</td>
+                    <td style="text-align: left;">All data requests for information hosted with DDS are linked to a project data set. The project data set is linked to a data sharing agreement from the publishing organisations. A project data set also governs and limits the type and nature of the data required by the subscribing system. For example, a diabetes system would request only diabetes data from DDS and therefore the data would be linked and filtered by a pre-authored diabetes data set, containing record type definitions such as Conditions, Medication, Allergies, and Diabetes related Observations, and value set definitions such as the national diabetes code set.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Access the following further test Discovery APIs at:</p>
         <p>Test - <a href="https://devgateway.discoverydataservice.net/eds-api/" title="https://devgateway.discoverydataservice.net/eds-api/" alt="https://devgateway.discoverydataservice.net/eds-api/" target="_blank">https://devgateway.discoverydataservice.net/eds-api/</a></p>
         <p><b>Important:</b> You must have a valid discovery username and password to obtain a valid authentication token. You must have a valid authentication token to call the secure APIs.</p>
         <table style="width: 100%;border-spacing: 0px 0px;">
@@ -92,49 +114,6 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#authentication" target="_blank" name="Authentication">Authentication</a>
-                    </td>
-                    <td style="text-align: left;">Used to obtain a valid authentication token for calling subsequent APIs.</td>
-                    <td style="text-align: left;">&#160;</td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#resourceTypes" target="_blank" name="Get_FHIR">Get FHIR resource types</a>
-                    </td>
-                    <td style="text-align: left;">Returns a list of FHIR resource types, and associated (human readable) names, that Discovery currently recognises, stores, and supports.</td>
-                    <td style="text-align: left;">&#160;</td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#patientByNHS" target="_blank" name="Get_Patients">Get patients for NHS number</a>
-                    </td>
-                    <td style="text-align: left;">Returns a FHIR bundle containing summaries for all patients known to discovery with the given NHS number.</td>
-                    <td style="text-align: left;">
-                        <p>See also:</p>
-                        <p><a href="#FHIR">FHIR profile resources</a>
-                        </p>
-                        <p><a href="https://github.com/endeavourhealth/FHIR-Profiles/tree/master/Profiles/PrimaryCare/Resources" target="_blank">GitHub FHIR Profiles repository</a>
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#patientResources" target="_blank" name="Get_resources">Get resources for patients</a>
-                    </td>
-                    <td style="text-align: left;">Returns a bundle of FHIR resources of the given types, for the given patients.
-
-					</td>
-                    <td style="text-align: left;"><![CDATA[
-					]]></td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#adminResources" target="_blank" name="Get_referenced_resource">Get referenced resource</a>
-                    </td>
-                    <td style="text-align: left;">Returns details of the requested resource reference such as doctors, locations, or organisations.
-
-					</td>
-                    <td style="text-align: left;"><![CDATA[
-
-					]]></td>
-                </tr>
                 <tr>
                     <td style="font-weight: bold;"><a href="https://devgateway.discoverydataservice.net/eds-api/#patientFlag" target="_blank" name="Get_flag">Get flag for patient</a>
                     </td>
