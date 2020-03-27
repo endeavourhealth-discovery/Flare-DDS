@@ -385,7 +385,7 @@ td
 	border-bottom: 1px solid #4678A1;
 }
 
-tr:nth-child(even)
+#stripe tr:nth-child(even)
 {
 	background-color: #f2f2f2;
 }
@@ -405,6 +405,13 @@ th
 	text-align: left;
 	background-color: #4678A1;
 	color: white;
+}
+
+.borders 
+{
+	border-right: 1px solid #4678A1;
+	border-bottom: none;
+	text-align: left;
 }
 
 td
@@ -428,6 +435,7 @@ table.sortable
 table
 {
 	max-width: 100%;
+	empty-cells: hide;
 }
 
 table td
