@@ -79,6 +79,7 @@
         <h2><a name="APIs"></a>APIs</h2>
         <p>The Discovery test APIs help our industry colleagues to develop new health and social care products and applications by accessing test patient data, from multiple health and social care sources, stored in the Discovery Data Service (DDS).</p>
         <p>We believe that this will also increase the benefits realised to those publishing to and subscribing from the DDS.</p>
+        <p>If you want to test our APIs against your own software, <a href="https://devgateway.discoverydataservice.net/eds-api/access.html" target="_blank">register your interest</a>.</p>
         <table style="width: 100%;border-spacing: 0px 0px;">
             <col />
             <col />
@@ -92,7 +93,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td style="font-weight: bold;"><a href="Resources/PDFs/Discovery FHIR Care Connect API (v1-1).pdf" target="_blank">Get structured record</a>
+                    <td style="font-weight: bold;"><a href="Resources/PDFs/Discovery FHIR Care Connect API (v1-1).pdf" target="_blank">Get structured record <i class="far fa-file-pdf " style="color: #ff0000;"></i></a>
                     </td>
                     <td style="text-align: left;">Returns a complete patient record in a structured format following GP and Care Connect standards.</td>
                     <td style="text-align: left;">All data requests for information hosted with DDS are linked to a project data set. The project data set is linked to a data sharing agreement from the publishing organisations. A project data set also governs and limits the type and nature of the data required by the subscribing system. For example, a diabetes system would request only diabetes data from DDS and therefore the data would be linked and filtered by a pre-authored diabetes data set, containing record type definitions such as Conditions, Medication, Allergies, and Diabetes related Observations, and value set definitions such as the national diabetes code set.</td>
@@ -132,7 +133,6 @@
             </tbody>
         </table>
         <p><b>Important:</b> The APIs and algorithms will only use data, return resources, or identify patients that you have protocols, agreements, and access for.</p>
-        <p>If you want to test our APIs against your own software, <a href="https://devgateway.discoverydataservice.net/eds-api/access.html" target="_blank">register your interest</a>.</p>
         <h2><a name="Manageme"></a>Management tools</h2>
         <p>The Discovery Data Service hosts a number of web applications and web application APIs for managing the data service.</p>
         <p>We have a skilled and experienced team developing tools and utilities to maximise the benefits of a single source of data.</p>
@@ -155,13 +155,186 @@
             </li>
         </ul>
         <h2><a name="Data"></a>Published data</h2>
-        <p>
-            <img src="Resources/Images/DDS publishers.png" style="max-width: 100%;mc-float: frame-center;" />
-        </p>
+        <table class="borders">
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <tr>
+                <th class="borders" colspan="3">Primary Care GP</th>
+                <th class="borders" colspan="3">Secondary Care</th>
+                <th class="borders" colspan="2">Unscheduled Care</th>
+                <th class="borders" colspan="1">Community &amp; Mental Health</th>
+            </tr>
+            <tr>
+                <td class="borders" style="background-color: #7fa6c5;color: #ffffff;font-weight: bold;">EMIS Web</td>
+                <td class="borders" style="background-color: #7fa6c5;color: #ffffff;font-weight: bold;">SystmOne</td>
+                <td class="borders" style="background-color: #7fa6c5;color: #ffffff;font-weight: bold;">Vision</td>
+                <td class="borders" style="background-color: #7fa6c5;color: #ffffff;font-weight: bold;">Cerner Millenium</td>
+                <td class="borders" style="background-color: #7fa6c5;color: #ffffff;font-weight: bold;">EMIS Web</td>
+                <td class="borders" style="background-color: #7fa6c5;color: #ffffff;font-weight: bold;">Medway</td>
+                <td class="borders" style="background-color: #7fa6c5;color: #ffffff;font-weight: bold;">Adastra</td>
+                <td class="borders" style="background-color: #7fa6c5;color: #ffffff;font-weight: bold;">EMIS Web</td>
+                <td class="borders" style="background-color: #7fa6c5;color: #ffffff;font-weight: bold;">Rio</td>
+            </tr>
+            <tr>
+                <td class="borders">Barking &amp; Dagenham<br />31</td>
+                <td class="borders">Barking &amp; Dagenham<br />1</td>
+                <td class="borders">Barking &amp; Dagenham<br />2</td>
+                <td class="borders">Homerton Hospital Trust**</td>
+                <td class="borders">BH<sup>1</sup> Community Heart Failure Nursing</td>
+                <td class="borders" style="border-bottom: solid 1px black"><span style="color: #ff0000;">BHRUT*</span>
+                </td>
+                <td class="borders">The Hurley Group</td>
+                <td class="borders">Patient First</td>
+                <td class="borders"><span style="color: #ff0000;">East London Foundation Trust*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="borders">Brent<br />5 <span style="color: #ff0000;">51*</span></td>
+                <td class="borders">Central London<br />28 <span style="color: #ff0000;">6*</span></td>
+                <td class="borders">Havering<br />2</td>
+                <td class="borders" style="border-bottom: solid 1px black">St Barts Hospital Trust***</td>
+                <td class="borders">BH<sup>1</sup> Community Cardiovascular Nursing</td>
+                <td class="noborders"> </td>
+                <td class="borders"><span style="color: #ff0000;">CHUHSE*</span>
+                </td>
+                <td class="borders" style="border-bottom: solid 1px black">City &amp; Hackney GP Confederation</td>
+                <td class="borders" style="border-bottom: solid 1px black"><span style="color: #ff0000;">North East London Foundation Trust*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="borders">City &amp; Hackney<br />40</td>
+                <td class="borders">Ealing<br />36 <span style="color: #ff0000;">41*</span></td>
+                <td class="borders" style="border-bottom: solid 1px black">Redbridge<br />1</td>
+                <td class="noborders"> </td>
+                <td class="borders">BH<sup>1</sup> Community Dietitians</td>
+                <td class="noborders"> </td>
+                <td class="borders">PELC</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+            </tr>
+            <tr>
+                <td class="borders">Ealing<br />1 <span style="color: #ff0000;">1*</span></td>
+                <td class="borders">Hammersmith &amp; Fulham<br />21 <span style="color: #ff0000;">8*</span></td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="borders">BH<sup>1</sup> Community Neuro Team</td>
+                <td class="noborders"> </td>
+                <td class="borders"><span style="color: #ff0000;">Newham OOH*</span>
+                </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+            </tr>
+            <tr>
+                <td class="borders">Harrow<br />0 <span style="color: #ff0000;">33*</span></td>
+                <td class="borders">Hounslow<br />24 <span style="color: #ff0000;">22*</span></td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="borders">BH<sup>1</sup> Diabetes Service</td>
+                <td class="noborders"> </td>
+                <td class="borders" style="border-bottom: solid 1px black"><span style="color: #ff0000;">London Ambulance Service (NEL)*</span>
+                </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+            </tr>
+            <tr>
+                <td class="borders">Havering<br />41</td>
+                <td class="borders">Redbridge<br />6</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="borders">BH<sup>1</sup> IMAPS + MSK Physiotherapy</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+            </tr>
+            <tr>
+                <td class="borders">Hillingdon<br />1 <span style="color: #ff0000;">45*</span></td>
+                <td class="borders">Waltham Forest<br />5</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="borders">BH<sup>1</sup> Renal Service</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+            </tr>
+            <tr>
+                <td class="borders">Hounslow<br />0 <span style="color: #ff0000;">1*</span></td>
+                <td class="borders" style="border-bottom: solid 1px black">West London<br />25 <span style="color: #ff0000;">17*</span></td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="borders">BH<sup>1</sup> Specialist Children's Services</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+            </tr>
+            <tr>
+                <td class="borders">Hurley Group<br />11</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="borders">BH<sup>1</sup> Community Diabetes Service</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+            </tr>
+            <tr>
+                <td class="borders">Newham<br />50</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="borders" style="border-bottom: solid 1px black">BH<sup>1</sup> Community Diabetes Service</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+            </tr>
+            <tr>
+                <td class="borders">Redbridge<br />34</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+            </tr>
+            <tr>
+                <td class="borders">Tower Hamlets<br />35</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+            </tr>
+            <tr>
+                <td class="borders" style="border-bottom: solid 1px black">Waltham Forest<br />35</td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+                <td class="noborders"> </td>
+            </tr>
+        </table>
         <p>Numbers indicate the number of GP practices that are sending live data.</p>
         <p>Numbers and text in <span style="color: #ff0000;">red <sup>*</sup></span> indicate data that is not yet live.</p>
-        <p><span style="color: #66CC00;">**</span>ADT feed only.</p>
-        <p><span style="color: #66CC00;">***</span>ADT feed plus daily file feed that includes CDE and CDS files.</p>
+        <p><span style="color: #000000;">**</span>ADT feed only.</p>
+        <p><span style="color: #000000;">***</span>ADT feed plus daily file feed that includes CDE and CDS files.</p>
         <p><sup>1</sup> Barts Health Trust</p>
         <h3><a name="Current"></a>Current data sets</h3>
         <p>The following table shows the datasets that are currently published by different supplier systems:</p>
