@@ -5,18 +5,6 @@
     Title="Architecture"
     Link="/Content/Technical.htm#Architec" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
   <TocEntry
-    Title="Components"
-    Link="/Content/Technical.htm#Componen" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
-  <TocEntry
-    Title="Management tools"
-    Link="/Content/Technical.htm#Manageme" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
-  <TocEntry
-    Title="Query and reporting tools"
-    Link="/Content/Technical.htm#Query" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
-  <TocEntry
-    Title="APIs"
-    Link="/Content/Technical.htm#APIs" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
-  <TocEntry
     Title="Published data"
     Link="/Content/Technical.htm#Data" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <TocEntry
@@ -26,7 +14,4 @@
   <TocEntry
     Title="Data assurance &amp; testing"
     Link="/Content/Technical.htm#Data2"></TocEntry>
-  <TocEntry
-    Title="Technologies"
-    Link="/Content/Technical.htm#Technolo" />
 </CatapultToc>

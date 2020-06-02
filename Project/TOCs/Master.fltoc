@@ -67,7 +67,4 @@
   <TocEntry
     Title="Contact"
     Link="/Content/Contact.htm" />
-  <TocEntry
-    Title="Spec"
-    Link="/Content/Specs/Language_and_structure.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
 </CatapultToc>
